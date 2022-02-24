@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <title>Katorly Lab</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/mdb.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!-- Header -->
+    <div id="nav"></div>
+
+    <!-- Info -->
+    <div id="info">
+      <br><br>
+      <div class="px-4 py-500 pt-5 text-light text-center">
+        <div class="align-items-center g-5 py-5">
+            <h1 class="display-1 fw-bold lh-1 mb-3 pb-5">What?!</h1>
+            <img class="d-block mx-auto mb-4" height="120" src="images/katorlys.svg" loading="lazy">
+            <p class="lead pt-5 pb-5">The page ur finding was swallowed by Enderdragon!</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <a role="button" class="btn btn-lg btn-rounded fw-bold shadow-0" style="background-color: #85ABFF; color: #ffffff;" href="index.html">
+              Back to home
+            </a>
+        </div>
+      </div>
+      <br><br>
+    </div>
+
+    <!-- Footer -->
+    <script type="text/javascript">
+      function nowTime() {
+        var today=new Date();
+        var yyyy = today.getFullYear();
+        document.getElementById('nowDate').innerHTML=yyyy;
+      }
+    </script>
+    <div id="footer"></div>
+
+    <!-- Includes -->
+    <script type="text/javascript">
+      $("#nav").load("includes/components/nav.html #header");
+      $("#footer").load("includes/components/nav.html #footer");
+    </script>
+</body>
+
+<script>
+  setInterval(nowTime, 1000);
+</script>
+
+</html>
