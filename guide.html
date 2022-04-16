@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Guide - Katorly Lab</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/soft-design-system.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/soft-design-system.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+    <!-- CACHE -->
+    <meta http-equiv="Cache-Control" content="max-age=86400 must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Intro -->
+    <div id="intro" class="p-5 mb-4 rounded-3" style="background-color: #FEFEFE;">
+        <div class="container-fluid col-xxl-11 py-3">
+            <h1 class="display-5 fw-bold">Guide</h1>
+            <p class="col-md-8 lead">Welcome to Katorly Lab help center!</p>
+        </div>
+    </div>
+    <!-- !Intro -->
+
+    <!-- Guidance -->
+    <section id="navigation" class="pb-5">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-6 py-2">
+                    <a target="_blank" href="https://github.com/katorlys/HelpCenter/wiki">
+                        <div class="card card-background move-on-hover">
+                            <div class="full-background"
+                                style="background-image: url(&#39;/img/guide/document.jpg&#39;)"></div>
+                            <div class="card-body pt-12">
+                                <h4 class="text-white">&#128218; Document</h4>
+                                <p>
+                                    Not knowing what to do in Katorly Lab? Have questions using the lab?
+                                    Here you may find more information and answers.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 py-2">
+                    <a target="_blank" href="https://github.com/katorlys/HelpCenter/discussions">
+                        <div class="card card-background move-on-hover">
+                            <div class="full-background"
+                                style="background-image: url(&#39;/img/guide/discussions.jpg&#39;)"></div>
+                            <div class="card-body pt-12">
+                                <h4 class="text-white">&#128149; Discussions</h4>
+                                <p>
+                                    Have problems that cannot be resolved in our existing document and discussion?
+                                    You may seek help by starting new discussions here.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Guidance -->
+
+    <!-- Footer -->
+    <script type="text/javascript">
+        function nowTime() {
+            var today = new Date();
+            var yyyy = today.getFullYear();
+            document.getElementById('nowDate').innerHTML = yyyy;
+        }
+    </script>
+    <div id="footer"></div>
+
+    <!-- INCLUDES -->
+    <script type="text/javascript">
+        $("#header").load("assets/components/nav.html #header");
+        $("#footer").load("assets/components/nav.html #footer");
+    </script>
+</body>
+
+<script>
+    setInterval(nowTime, 500);
+</script>
+
+</html>

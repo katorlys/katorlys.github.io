@@ -85,7 +85,7 @@
                         open a new
                         discussion, and <b>do not</b> open an issue.</span>
                 </div>
-                <h5 class="fw-bold lh-1 mb-3 px-3 pt-4">Report Bugs</h5>
+                <h5 id="bugs" class="fw-bold lh-1 mb-3 px-3 pt-4">Report Bugs</h5>
                 <p class="text-dark lead mb-0 px-3 pt-2 py-4">
                     To report a bug, you need to follow the format below:
                 </p>
@@ -132,7 +132,7 @@ https://katorlys.github.io/contribute.html -->
                     <span class="alert-text ms-1">Your issue may be labeled as invalid and closed by the author. If you
                         believe there is an error, please <b>open a new issue</b> instead.</span>
                 </div>
-                <h5 class="fw-bold lh-1 mb-3 px-3 pt-4">Make suggestions</h5>
+                <h5 id="suggest" class="fw-bold lh-1 mb-3 px-3 pt-4">Make suggestions</h5>
                 <p class="text-dark lead mb-0 px-3 pt-2 py-4">
                     To make a suggestion, you need to follow the format below:
                 </p>
@@ -201,13 +201,26 @@ https://katorlys.github.io/contribute.html -->
             </div>
         </div>
     </div>
-    <div class="buttons">
-        <a type="button" href="javascript:scroll(0,0)"
-            class="btn btn-white btn-rounded btn-icon-only position-fixed bottom-5 end-5">
-            <img width="16" height="16" src="/img/up.svg">
-        </a>
-    </div>
     <!-- /Article -->
+
+    <!-- Contents -->
+    <div class="btn-group dropstart position-fixed bottom-5 end-5">
+        <button type="button" class="btn bg-white btn-icon-only" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img width="16" height="auto" src="/img/list.svg">
+        </button>
+        <ul class="dropdown-menu border shadow-none px-2 py-3">
+            <li><a class="dropdown-item border-radius-md" href="#issues">Issues</a></li>
+            <ul style="list-style-type: none">
+                <li><a class="dropdown-item border-radius-md" href="#bugs">Report Bugs</a></li>
+                <li><a class="dropdown-item border-radius-md" href="#suggest">Make suggestions</a></li>
+            </ul>
+            <li><a class="dropdown-item border-radius-md" href="#pulls">Pull Requests</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item border-radius-md" href="javascript:scroll(0,0)">Back to Top</a></li>
+        </ul>
+    </div>
+    <!-- /Contents -->
 
     <!-- Footer -->
     <script type="text/javascript">
