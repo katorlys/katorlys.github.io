@@ -77,6 +77,22 @@
     </div>
     <!-- /Message -->
 
+    <!-- Contents -->
+    <div class="buttons">
+        <a type="button" target="_blank" href="https://github.com/katorlys/HelpCenter/wiki#copyright-info"
+            class="btn btn-rounded btn-icon-only position-fixed bottom-5 end-5" style="background-color: #24292F;"
+            data-bs-toggle="tooltip" data-bs-placement="left" title="View on Github">
+            <img width="16px" height="auto" class="pb-1" src="/img/viewongithub.svg">
+        </a>
+    </div>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <!-- /Contents -->
+
     <!-- Footer -->
     <script type="text/javascript">
         function nowTime() {

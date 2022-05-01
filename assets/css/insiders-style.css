@@ -1,0 +1,45 @@
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: #FAFAFA;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    height: 5px;
+    background-color: #EBEBEB;
+}
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #CFCBD0;
+}
+::selection {
+    background: none;
+}
+::-moz-selection {
+    background: none;
+}
+.kl-blue {
+    color: #85ABFF;
+}
+.kl-purple {
+    color: #C894EB;
+}
+.kl-red {
+    color: #DC352C;
+}
+.kl-red:hover {
+    color: #EF7379;
+}
+.kl-red:active {
+    color: #EF7379;
+    text-decoration: underline;
+}
+.kl-event-active {
+    background-color: #FF85E8;
+}
+.kl-event-complete {
+    background-color: #D5D5D5;
+}
+.kl-bg {
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
