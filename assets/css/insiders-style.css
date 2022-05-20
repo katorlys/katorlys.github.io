@@ -16,6 +16,12 @@ body {
 ::-moz-selection {
     background: none;
 }
+.kl-navicon:hover {
+    filter: brightness(90%);
+}
+.kl-navlink:hover {
+    color: #7A8290;
+}
 .kl-blue {
     color: #85ABFF;
 }

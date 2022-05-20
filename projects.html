@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Guide - Katorly Lab</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/soft-design-system.min.css">
+    <link rel="stylesheet" href="assets/css/uikit.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/soft-design-system.min.js"></script>
+    <script type="text/javascript" src="assets/js/uikit.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+    <!-- CACHE -->
+    <meta http-equiv="Cache-Control" content="max-age=86400 must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Intro -->
+    <div id="intro" class="p-5 mb-4" style="background-color: #FEFEFE;">
+        <div class="container-fluid col-xxl-11 py-3">
+            <h1 class="display-5 fw-bold">Projects</h1>
+            <p class="lead">
+                There are currently <span id="projectscount"></span> public projects. Below are categorized by
+                programming languages.
+            </p>
+        </div>
+    </div>
+    <!-- !Intro -->
+
+    <!-- Projects -->
+    <section id="projects" class="pt-4">
+        <div class="container">
+            <div class="row mx-auto mb-4">
+
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+                    <a href="https://github.com/orgs/katorlys/repositories?q=python" target="_blank"
+                        class="card kl-card shadow-none">
+                        <div class="card-footer p-3">
+                            <div class="d-flex">
+                                <div class="avatar avatar-xl border-radius-md p-2">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 226 226">
+                                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                            stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                            stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                            font-weight="none" font-size="none" text-anchor="none"
+                                            style="mix-blend-mode: normal">
+                                            <path d="M0,226v-226h226v226z" fill="none"></path>
+                                            <g fill="#3572a5">
+                                                <path
+                                                    d="M110.74,9.04c-39.32047,0 -47.46,20.30469 -47.46,32.06375v22.17625h45.2v4.52h-67.37625c-14.91953,0 -32.06375,11.75906 -32.06375,45.2c0,33.44094 17.14422,45.2 32.06375,45.2h26.69625v-27.12c0,-9.94047 8.13953,-18.08 18.08,-18.08h54.24c7.68047,0 13.56,-5.87953 13.56,-13.56v-58.33625c0,-15.82 -14.91953,-32.06375 -42.94,-32.06375zM90.4,31.64c4.97906,0 9.04,4.06094 9.04,9.04c0,4.97906 -4.06094,9.04 -9.04,9.04c-4.97906,0 -9.04,-4.06094 -9.04,-9.04c0,-4.97906 4.06094,-9.04 9.04,-9.04zM158.2,67.8v31.64c0,9.94047 -8.13953,18.08 -18.08,18.08h-54.24c-7.68047,0 -13.56,5.87953 -13.56,13.56v53.81625c0,15.82 14.91953,32.06375 42.94,32.06375c39.32047,0 47.46,-20.30469 47.46,-32.06375v-22.17625h-45.2v-4.52h67.37625c14.91953,0 32.06375,-11.75906 32.06375,-45.2c0,-33.44094 -17.14422,-45.2 -32.06375,-45.2zM135.6,176.28c4.97906,0 9.04,4.06094 9.04,9.04c0,4.97906 -4.06094,9.04 -9.04,9.04c-4.97906,0 -9.04,-4.06094 -9.04,-9.04c0,-4.97906 4.06094,-9.04 9.04,-9.04z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="ms-3 my-auto kl-npe">
+                                    <span class="text-lg font-weight-bold my-auto mb-0">Python</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+                    <a href="https://github.com/orgs/katorlys/repositories?q=java" target="_blank"
+                        class="card kl-card shadow-none">
+                        <div class="card-footer p-3">
+                            <div class="d-flex">
+                                <div class="avatar avatar-xl border-radius-md p-2">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 226 226">
+                                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                            stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                            stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                            font-weight="none" font-size="none" text-anchor="none"
+                                            style="mix-blend-mode: normal">
+                                            <path d="M0,226v-226h226v226z" fill="none"></path>
+                                            <g fill="#b07219">
+                                                <path
+                                                    d="M127.4075,-0.01766c12.43,28.76203 -44.59969,46.52422 -49.87891,70.50141c-4.87313,21.99969 33.84703,47.58359 33.86469,47.58359c-5.87953,-9.11062 -10.13469,-16.63219 -16.03187,-30.81016c-9.97578,-23.97719 60.71984,-45.65906 32.04609,-87.27485zM165.20953,39.8325c0,0 -49.93187,3.16047 -52.47437,35.11828c-1.13,14.23094 13.11859,21.82313 13.54234,32.18734c0.31781,8.43969 -8.52797,15.48453 -8.52797,15.48453c0,0 16.04953,-3.01922 21.08156,-15.92594c5.56172,-14.31922 -10.78797,-24.10078 -9.14594,-35.55969c1.58906,-10.96453 35.52437,-31.30453 35.52437,-31.30453zM177.32172,113.65328c-5.22625,-0.22953 -11.03516,1.50078 -16.29672,5.27922c10.31125,-2.20703 19.03344,4.09625 19.03344,11.37063c0,16.385 -23.67703,31.86953 -23.67703,31.86953c0,0 36.65438,-4.18453 36.65438,-31.09266c0,-11.12344 -7.02719,-17.02062 -15.71406,-17.42672zM86.70984,113.68859c0,0 -45.74734,-0.61797 -45.74734,12.32406c0,13.52469 59.90766,14.47812 102.68875,6.14438c0,0 11.42359,-7.82172 14.46047,-10.735c-28.03813,5.72062 -92.02437,6.47984 -92.02437,1.53609c0,-4.57297 20.6225,-9.26953 20.6225,-9.26953zM75.65703,138.86641c-7.00953,0 -17.47969,5.42047 -17.47969,10.64672c0,10.50547 52.84516,18.60969 91.97141,3.24875l-13.54234,-8.29844c-26.51969,8.49266 -75.40984,5.77359 -60.94937,-5.59703zM82.17219,162.36688c-9.62266,0 -15.85531,5.9325 -15.85531,10.31125c0,13.48937 57.43578,14.84891 80.19469,1.13l-14.46047,-9.19891c-17.00297,7.18609 -59.69578,8.15719 -49.87891,-2.24234zM50.12609,174.585c-15.67875,-0.31781 -25.86641,6.72703 -25.86641,12.57125c-0.01766,31.075 160.56594,29.57422 160.56594,-2.18937c0,-5.26156 -6.215,-7.76875 -8.45734,-8.96938c13.11859,30.36875 -131.30953,28.02047 -131.30953,10.09938c0,-4.07859 10.59375,-8.08656 20.44594,-6.16203l-8.35141,-4.74953c-2.45422,-0.37078 -4.8025,-0.565 -7.02719,-0.60031zM201.75797,195.49c-24.41859,23.12969 -86.28609,31.56938 -148.50672,17.28547c62.20297,25.44266 148.18891,11.12344 148.50672,-17.28547z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="ms-3 my-auto kl-npe">
+                                    <span class="text-lg font-weight-bold my-auto mb-0">Java</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /Projects -->
+
+    <!-- Footer -->
+    <script type="text/javascript">
+        function nowTime() {
+            var today = new Date();
+            var yyyy = today.getFullYear();
+            document.getElementById('nowDate').innerHTML = yyyy;
+        }
+    </script>
+    <div id="footer"></div>
+
+    <!-- INCLUDES -->
+    <script type="text/javascript">
+        $("#header").load("assets/components/nav.html #header");
+        $("#footer").load("assets/components/nav.html #footer");
+
+        //Projects count
+        if (sessionStorage.getItem("katorlylab_projectscount") != null) {
+            document.getElementById("projectscount").innerHTML = sessionStorage.getItem("katorlylab_projectscount");
+        } else {
+            var url = "https://api.github.com/orgs/katorlys";
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url);
+            xhr.setRequestHeader("Accept", "application/vnd.github.v3+json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        var count = JSON.parse(xhr.response).public_repos;
+                        document.getElementById("projectscount").innerHTML = count;
+                        sessionStorage.setItem("katorlylab_projectscount", count);
+                    }
+                    else document.getElementById("projectscount").innerHTML = "?";
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</body>
+
+<script>
+    setInterval(nowTime, 500);
+</script>
+
+</html>

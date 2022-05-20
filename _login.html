@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Guest book - Katorly Lab</title>
+    <title>Katorly Lab</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,25 +39,19 @@
     <!-- Header -->
     <div id="header"></div>
 
-    <!-- Intro -->
-    <div id="intro" class="kl-bg text-light p-5 mb-4" style="background-image:url(img/guestbook_bg.jpg)">
-        <div class="container-fluid col-xxl-11 pt-4 pb-2">
-            <h1 class="display-5 fw-bold text-light">Guest book</h1>
-            <p class="lead">Check out our guest book and leave a message on it!</p>
-        </div>
-    </div>
-    <!-- /Intro -->
-
-    <!-- Guestbook -->
-    <section id="involving" class="pt-4">
-        <div class="container">
-            <div class="row mb-5">
-                <script src="https://utteranc.es/client.js" repo="katorlys/HelpCenter" issue-number="2"
-                    theme="github-light" crossorigin="anonymous" async></script>
+    <!-- Section -->
+    <section>
+        <div class="page-header min-vh-100" style="background-image: url(/img/account/login_bg.jpg)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
+                        <div id="login"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- /Guestbook -->
+    <!-- /Section -->
 
     <!-- Footer -->
     <script type="text/javascript">
@@ -73,6 +67,16 @@
     <script type="text/javascript">
         $("#header").load("assets/components/nav.html #header");
         $("#footer").load("assets/components/nav.html #footer");
+
+        //Login
+        // if (sessionStorage.getItem("katorlylab_token") != null) {
+        //     $("#login").load("assets/components/account.html #logged");
+        // } else if (window.location.href.split("?").length >= 2) {
+        //     $("#login").load("assets/components/account.html #logging");
+        //     setTimeout("window.location.replace(\"/profile.html\")", 3000);
+        // } else {
+        //     $("#login").load("assets/components/account.html #login");
+        // }
     </script>
 </body>
 

@@ -307,7 +307,8 @@
                                     <p class="text-secondary text-sm font-weight-bold ms-1 mb-0">2021.10.22</p>
                                 </div>
                                 <div class="col-6 text-end">
-                                    <a target="_blank" href="https://github.com/katorlys/Template">
+                                    <a target="_blank" href="https://github.com/katorlys/Template"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Go">
                                         <img src="/img/openlink.svg" width="24px" height="auto" class="me-1">
                                     </a>
                                 </div>
@@ -337,7 +338,8 @@
                                     <p class="text-secondary text-sm font-weight-bold ms-1 mb-0">2022.01.21</p>
                                 </div>
                                 <div class="col-6 text-end">
-                                    <a target="_blank" href="https://github.com/katorlys/Maven-Spigot-Starter">
+                                    <a target="_blank" href="https://github.com/katorlys/Maven-Spigot-Starter"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Go">
                                         <img src="/img/openlink.svg" width="24px" height="auto" class="me-1">
                                     </a>
                                 </div>
@@ -349,6 +351,12 @@
             </div>
         </div>
     </section>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
     <!-- /Templates -->
 
     <section class="py-5 bg-gradient-dark position-relative kl-bg overflow-hidden"

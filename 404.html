@@ -16,7 +16,6 @@
     <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/soft-design-system.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/404.js"></script>
 
     <!-- CACHE -->
     <meta http-equiv="Cache-Control" content="max-age=86400 must-revalidate" />
@@ -141,6 +140,19 @@
     <script type="text/javascript">
         $("#header").load("assets/components/nav.html #header");
         $("#footer").load("assets/components/nav.html #footer");
+
+        //Jokes
+        var url = "https://icanhazdadjoke.com/";
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url);
+        xhr.setRequestHeader("Accept", "text/plain");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) document.getElementById("joke").innerHTML = xhr.responseText;
+                else document.getElementById("joke").innerHTML = "Going back to the homepage may help you.";
+            }
+        };
+        xhr.send();
     </script>
 </body>
 

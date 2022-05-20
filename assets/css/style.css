@@ -16,8 +16,37 @@ body {
 ::-moz-selection {
     background: #E0E0E0;
 }
+.kl-navicon:hover {
+    filter: brightness(90%);
+}
+.kl-navlink:hover {
+    color: #7A8290;
+}
 .kl-bg {
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-attachment: scroll;
+}
+.kl-svg:hover {
+    filter: brightness(80%);
+}
+.kl-np {
+    white-space: nowrap;
+    overflow: hidden;
+}
+.kl-npe {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.kl-card {
+    color: #515C70;
+}
+.kl-card:hover {
+    color: #515C70;
+    filter: brightness(95%);
+}
+.kl-card:active {
+    color: #515C70;
+    filter: brightness(90%);
 }

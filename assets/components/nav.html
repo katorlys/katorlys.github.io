@@ -2,7 +2,7 @@
 <nav id="header" class="navbar navbar-expand-md shadow-none z-index-3 py-3" style="background-color: #FEFEFE;">
   <div class="container">
     <a class="navbar-brand" href="/index.html">
-      <img width="26.44" height="auto" src="/img/mark.svg">
+      <img class="kl-navicon" width="26.44" height="auto" src="/img/mark.svg">
     </a>
     <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,25 +15,30 @@
     <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
       <ul class="navbar-nav navbar-nav-hover ms-auto">
         <li class="nav-item px-1">
-          <a href="/projects.html" class="nav-link text-lg text-decoration-none">
+          <a href="/projects.html" class="nav-link kl-navlink text-lg text-decoration-none">
             Projects
           </a>
         </li>
         <li class="nav-item px-1">
-          <a href="/guide.html" class="nav-link text-lg text-decoration-none">
+          <a href="/guide.html" class="nav-link kl-navlink text-lg text-decoration-none">
             Guide
           </a>
         </li>
         <li class="nav-item px-1">
-          <a href="/involving.html" class="nav-link text-lg text-decoration-none">
+          <a href="/involving.html" class="nav-link kl-navlink text-lg text-decoration-none">
             Get involved
           </a>
         </li>
         <li class="nav-item px-1">
-          <a href="/insiders.html" class="nav-link text-lg text-decoration-none">
+          <a href="/insiders.html" class="nav-link kl-navlink text-lg text-decoration-none">
             Insiders
           </a>
         </li>
+        <!-- <li class="nav-item px-1">
+          <a href="/login.html" class="nav-link text-lg text-decoration-none">
+            <img width="20px" height="auto" src="/img/login.svg">
+          </a>
+        </li> -->
       </ul>
     </div>
   </div>
@@ -53,15 +58,19 @@
           View full Copyright Info <a class="link-secondary text-decoration-underline" target="_blank"
             href="/copyright.html">here</a>.
         </p>
-        <a href="https://github.com/katorlys" target="_blank" class="text-secondary me-xl-2 me-2">
-          <img src="/img/social/github.svg" width="22px" height="auto">
+        <a href="https://github.com/katorlys" target="_blank" class="text-secondary text-decoration-none me-xl-2 me-2">
+          <img src="/img/social/github.svg" width="22px" height="auto" class="kl-svg">
         </a>
-        <a href="https://www.npmjs.com/~katorly" target="_blank" class="text-secondary me-xl-2 me-2">
-          <img src="/img/social/npmjs.svg" width="26px" height="auto">
+        <a href="https://www.npmjs.com/~katorly" target="_blank"
+          class="text-secondary text-decoration-none me-xl-2 me-2">
+          <img src="/img/social/npmjs.svg" width="26px" height="auto" class="kl-svg">
+        </a>
+        <a href="https://katorly.itch.io" target="_blank" class="text-secondary text-decoration-none me-xl-2 me-2">
+          <img src="/img/social/itch.svg" width="22px" height="auto" class="kl-svg">
         </a>
         <a href="https://www.spigotmc.org/members/katorly.1301379/#resources" target="_blank"
-          class="text-secondary me-xl-2 me-2">
-          <img src="/img/social/spigotmc.svg" width="22px" height="auto">
+          class="text-secondary text-decoration-none me-xl-2 me-2">
+          <img src="/img/social/spigotmc.svg" width="22px" height="auto" class="kl-svg">
         </a>
       </div>
       <div class="col-md-2 col-6 mb-md-0 mb-4">
@@ -93,7 +102,7 @@
         <h6 class="text-sm">Resources</h6>
         <ul class="flex-column ms-n3 nav">
           <li class="nav-item">
-            <a class="nav-link text-secondary text-decoration-none" href="/copyright.html" target="_blank">
+            <a class="nav-link text-secondary text-decoration-none" href="/copyright.html" target="_blank" rel="opener">
               Copyright Info
             </a>
           </li>
@@ -104,8 +113,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary text-decoration-none" href="guestbook.html"
-              target="_blank">
+            <a class="nav-link text-secondary text-decoration-none" href="guestbook.html" target="_blank" rel="opener">
               Guest book
             </a>
           </li>
@@ -114,7 +122,7 @@
     </div>
     <hr class="dark mt-lg-5 mt-4 mb-sm-4 mb-1">
     <div class="row">
-      <div class="col-8 mx-lg-auto text-lg-center">
+      <div class="col-8 mx-auto text-center">
         <p class="text-sm text-dark">
           &copy; 2020-<span id="nowDate"></span>
           <a href="/index.html" class="link-dark text-decoration-none">
