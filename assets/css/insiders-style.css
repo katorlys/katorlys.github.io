@@ -22,6 +22,18 @@ body {
 .kl-navlink:hover {
     color: #7A8290;
 }
+.kl-np {
+    white-space: nowrap;
+    overflow: hidden;
+}
+.kl-npe {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.kl-npn {
+    white-space: nowrap;
+}
 .kl-blue {
     color: #85ABFF;
 }

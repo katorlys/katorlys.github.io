@@ -39,6 +39,9 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.kl-npn {
+    white-space: nowrap;
+}
 .kl-card {
     color: #515C70;
 }
