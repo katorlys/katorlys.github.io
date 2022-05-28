@@ -1,6 +1,10 @@
 body {
     font-family: 'Kumbh Sans', sans-serif;
     background: #FAFAFA;
+
+    /* Firefox scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: #CFCBD0 #EBEBEB;
 }
 ::-webkit-scrollbar {
     width: 12px;
