@@ -20,16 +20,35 @@ body {
 ::-moz-selection {
     background: #E0E0E0;
 }
+.kl-navicon {
+    transition: all 0.15s;
+    -moz-transition: all 0.15s;
+}
 .kl-navicon:hover {
     filter: brightness(90%);
 }
+.kl-navlink {
+    transition: all 0.15s;
+    -moz-transition: all 0.15s;
+}
 .kl-navlink:hover {
     color: #7A8290;
+}
+.kl-footerlink {
+    transition: all 0.15s;
+    -moz-transition: all 0.15s;
+}
+.kl-footerlink:hover {
+    filter: brightness(115%);
 }
 .kl-bg {
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-attachment: scroll;
+}
+.kl-svg {
+    transition: all 0.15s;
+    -moz-transition: all 0.15s;
 }
 .kl-svg:hover {
     filter: brightness(80%);
@@ -45,15 +64,4 @@ body {
 }
 .kl-npn {
     white-space: nowrap;
-}
-.kl-card {
-    color: #515C70;
-}
-.kl-card:hover {
-    color: #515C70;
-    filter: brightness(95%);
-}
-.kl-card:active {
-    color: #515C70;
-    filter: brightness(90%);
 }

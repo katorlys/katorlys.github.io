@@ -534,7 +534,7 @@
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) document.getElementById("joke").innerHTML = xhr.responseText;
-                else document.getElementById("joke").innerHTML = "Going back to the homepage may help you.";
+                else document.getElementById("joke").innerHTML = "Maybe you wanna go home.";
             }
         };
         xhr.send();

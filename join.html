@@ -132,11 +132,14 @@
                                     and follow the format below:
                                 </p>
                                 <div class="alert" role="alert" style="background-color: #F0F0F0;">
-                                    <label class="d-flex justify-content-end position-absolute top-5 end-2">Select to
-                                        Copy</label>
-                                    <textarea rows="13" class="form-control" onfocus="this.select()" wrap="off"
-                                        style="box-shadow: 1px 1px 1px #F0F0F0 ; border-color: #F0F0F0; background-color: #F0F0F0"
-                                        readonly="readonly">
+                                    <copybutton>
+                                        <button id="copybutton" type="button"
+                                            class="btn bg-white btn-icon-only w-auto shadow-none"
+                                            style="position: absolute; top: 20px; right: 20px;">
+                                            <img width="16px" height="auto" class="pb-1" src="/img/involving/copy.svg">
+                                        </button>
+                                        <textarea rows="13" class="form-control" wrap="off" readonly="readonly"
+                                            style="box-shadow: 1px 1px 1px #F0F0F0 ; border-color: #F0F0F0; background-color: #F0F0F0">
 ### Profile Information
 **Github username:** <!-- Username, not nickname! -->  
 **Contact email:** <!-- We may use it to contact you. -->  
@@ -150,6 +153,7 @@ https://katorlys.github.io/join.html#what -->
 <!-- Share your ideas with us, and we'd love to hear from you! -->
 - I'm joining Katorly Lab because <!-- Why are you joining? -->
 - I'm going to <!-- What are you going to do next in Katorly Lab? --></textarea>
+                                    </copybutton>
                                 </div>
                             </div>
                         </div>
@@ -161,9 +165,9 @@ https://katorlys.github.io/join.html#what -->
     <!-- /Article -->
 
     <!-- Contents -->
-    <div class="btn-group dropstart position-fixed bottom-5 end-5">
+    <div class="btn-group dropstart position-fixed bottom-5 end-5" style="z-index: 99;">
         <button type="button" class="btn bg-white btn-icon-only" data-bs-toggle="dropdown" aria-expanded="false">
-            <img width="16" height="auto" src="/img/list.svg">
+            <img width="16" height="auto" src="/img/involving/list.svg">
         </button>
         <ul class="dropdown-menu border shadow-none px-2 py-3">
             <li><a class="dropdown-item border-radius-md" href="#what">What you will gain</a></li>
@@ -173,7 +177,7 @@ https://katorlys.github.io/join.html#what -->
             </li>
             <li><a class="dropdown-item border-radius-md" target="_blank"
                     href="https://github.com/katorlys/katorlys.github.io/blob/main/join.html">
-                    <img width="16px" height="auto" class="me-1 pb-1" src="/img/edit.svg">Improve</a>
+                    <img width="16px" height="auto" class="me-1 pb-1" src="/img/involving/edit.svg">Improve</a>
             </li>
             <li><a class="dropdown-item border-radius-md" href="javascript:scroll(0,0)">
                     <img width="20px" height="auto" class="pb-1" src="/img/up.svg">Back to Top</a>
@@ -196,6 +200,14 @@ https://katorlys.github.io/join.html#what -->
     <script type="text/javascript">
         $("#header").load("assets/components/nav.html #header");
         $("#footer").load("assets/components/nav.html #footer");
+
+        $("copybutton").click(function () {
+            $(this).children("textarea").select();
+            document.execCommand('copy');
+            $(this).children("button").children("img").attr("src", "/img/involving/copied.svg");
+            $this = $(this);
+            setTimeout("$this.children('button').children('img').attr('src', '/img/involving/copy.svg');", 1000);
+        });
     </script>
 </body>
 
