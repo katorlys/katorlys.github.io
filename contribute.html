@@ -25,6 +25,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <style>
+        .kl-context {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+    </style>
 
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -45,7 +51,7 @@
             <p class="col-md-8 text-sm pb-2"><a href="/involving.html" class="link-secondary">Get involved</a> /
                 Contribute</p>
             <h1 class="display-5 fw-bold text-light">Make Contributions</h1>
-            <p class="col-md-8 lead">Read this guide before contributing to Katorly Lab projects.</p>
+            <p class="lead">Read this guide before contributing to Katorly Lab projects.</p>
         </div>
     </div>
     <!-- /Intro -->
@@ -53,7 +59,7 @@
     <!-- Article -->
     <div class="container col-xxl-8 px-4 pt-2 pb-5">
         <div class="row flex-lg-row align-items-center g-5 py-5">
-            <div class="col-lg-12">
+            <div class="col-lg-12 kl-context">
                 <p class="text-dark lead mb-0 px-3 pb-2">
                     Katorly Lab welcomes everyone who is warm-hearted to contribute to any of its repositories.
                 </p>
@@ -90,10 +96,13 @@
                     To report a bug, you need to follow the format below:
                 </p>
                 <div class="alert" role="alert" style="background-color: #F0F0F0;">
-                    <label class="d-flex justify-content-end position-absolute top-3 end-2">Select to Copy</label>
-                    <textarea rows="23" class="form-control" onfocus="this.select()" wrap="off"
-                        style="box-shadow: 1px 1px 1px #F0F0F0 ; border-color: #F0F0F0; background-color: #F0F0F0"
-                        readonly="readonly">
+                    <copybutton>
+                        <button id="copybutton" type="button" class="btn bg-white btn-icon-only w-auto shadow-none"
+                            style="position: absolute; top: 20px; right: 20px;">
+                            <img width="16px" height="auto" class="pb-1" src="/img/involving/copy.svg">
+                        </button>
+                        <textarea rows="23" class="form-control" wrap="off" readonly="readonly"
+                            style="box-shadow: 1px 1px 1px #F0F0F0 ; border-color: #F0F0F0; background-color: #F0F0F0">
 ### Bug Information
 **Describe the bug**  
 <!-- Make a clear and concise description of what the bug is. Insert screenshots or recorded videos if neccessary.
@@ -117,6 +126,7 @@ If you are willing to use a paste site, please use something like https://gist.g
 
 **Other**  
 <!-- Have anything else to add? --></textarea>
+                    </copybutton>
                 </div>
                 <p class="text-dark lead mb-0 px-3 pt-2 py-4">
                     And please make sure you are using the <strong>latest</strong> version of the project.
@@ -131,10 +141,13 @@ If you are willing to use a paste site, please use something like https://gist.g
                     To make a suggestion, you need to follow the format below:
                 </p>
                 <div class="alert" role="alert" style="background-color: #F0F0F0;">
-                    <label class="d-flex justify-content-end position-absolute top-6 end-2">Select to Copy</label>
-                    <textarea rows="10" class="form-control" onfocus="this.select()" wrap="off"
-                        style="box-shadow: 1px 1px 1px #F0F0F0 ; border-color: #F0F0F0; background-color: #F0F0F0"
-                        readonly="readonly">
+                    <copybutton>
+                        <button id="copybutton" type="button" class="btn bg-white btn-icon-only w-auto shadow-none"
+                            style="position: absolute; top: 20px; right: 20px;">
+                            <img width="16px" height="auto" class="pb-1" src="/img/involving/copy.svg">
+                        </button>
+                        <textarea rows="10" class="form-control" wrap="off" readonly="readonly"
+                            style="box-shadow: 1px 1px 1px #F0F0F0 ; border-color: #F0F0F0; background-color: #F0F0F0">
 ### Suggestion Information
 **Suggestion**  
 <!-- Enter your suggestion here. Try to be as thorough as possible.
@@ -145,6 +158,7 @@ You can also help us improve by pulling a request which correct or improve some 
 
 **Other**  
 <!-- Have anything else to add? --></textarea>
+                    </copybutton>
                 </div>
                 <p class="text-dark lead mb-0 px-3 pt-2 py-4">
                     Please don't make any feature suggestions that already exist. Search before you make a suggestion in
@@ -163,10 +177,13 @@ You can also help us improve by pulling a request which correct or improve some 
                     To report a bug, you need to follow the format below:
                 </p>
                 <div class="alert" role="alert" style="background-color: #F0F0F0;">
-                    <label class="d-flex justify-content-end position-absolute top-6 end-2">Select to Copy</label>
-                    <textarea rows="9" class="form-control" onfocus="this.select()" wrap="off"
-                        style="box-shadow: 1px 1px 1px #F0F0F0 ; border-color: #F0F0F0; background-color: #F0F0F0"
-                        readonly="readonly">
+                    <copybutton>
+                        <button id="copybutton" type="button" class="btn bg-white btn-icon-only w-auto shadow-none"
+                            style="position: absolute; top: 20px; right: 20px;">
+                            <img width="16px" height="auto" class="pb-1" src="/img/involving/copy.svg">
+                        </button>
+                        <textarea rows="9" class="form-control" wrap="off" readonly="readonly"
+                            style="box-shadow: 1px 1px 1px #F0F0F0 ; border-color: #F0F0F0; background-color: #F0F0F0">
 ### Pull Request Information
 <!-- Introduce your pull request here. Make it clear and concise! -->
 
@@ -176,6 +193,7 @@ You may paste the link of related issues here if there is any. -->
 
 **Other**  
 <!-- Have anything else to add? --></textarea>
+                    </copybutton>
                 </div>
                 <p class="text-dark lead mb-0 px-3 pt-2 py-4">
                     Remember that formatting contents <strong>will not</strong> be accepted.
@@ -186,10 +204,9 @@ You may paste the link of related issues here if there is any. -->
     <!-- /Article -->
 
     <!-- Contents -->
-    <div class="btn-group dropstart position-fixed bottom-5 end-5">
-        <button type="button" class="btn bg-white btn-icon-only" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <img width="16" height="auto" src="/img/list.svg">
+    <div class="btn-group dropstart position-fixed bottom-5 end-5" style="z-index: 99;">
+        <button type="button" class="btn bg-white btn-icon-only" data-bs-toggle="dropdown" aria-expanded="false">
+            <img width="16" height="auto" src="/img/involving/list.svg">
         </button>
         <ul class="dropdown-menu border shadow-none px-2 py-3">
             <li><a class="dropdown-item border-radius-md" href="#issues">Issues</a></li>
@@ -198,12 +215,15 @@ You may paste the link of related issues here if there is any. -->
                 <li><a class="dropdown-item border-radius-md" href="#suggest">Make suggestions</a></li>
             </ul>
             <li><a class="dropdown-item border-radius-md" href="#pulls">Pull Requests</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item border-radius-md" target="_blank" href="https://github.com/katorlys/katorlys.github.io/blob/main/contribute.html">
-                <img width="16px" height="auto" class="me-1 pb-1" src="/img/edit.svg">Improve</a>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item border-radius-md" target="_blank"
+                    href="https://github.com/katorlys/katorlys.github.io/blob/main/contribute.html">
+                    <img width="16px" height="auto" class="me-1 pb-1" src="/img/involving/edit.svg">Improve</a>
             </li>
             <li><a class="dropdown-item border-radius-md" href="javascript:scroll(0,0)">
-                <img width="20px" height="auto" class="pb-1" src="/img/up.svg">Back to Top</a>
+                    <img width="20px" height="auto" class="pb-1" src="/img/up.svg">Back to Top</a>
             </li>
         </ul>
     </div>
@@ -223,6 +243,14 @@ You may paste the link of related issues here if there is any. -->
     <script type="text/javascript">
         $("#header").load("assets/components/nav.html #header");
         $("#footer").load("assets/components/nav.html #footer");
+
+        $("copybutton").click(function () {
+            $(this).children("textarea").select();
+            document.execCommand('copy');
+            $(this).children("button").children("img").attr("src", "/img/involving/copied.svg");
+            $this = $(this);
+            setTimeout("$this.children('button').children('img').attr('src', '/img/involving/copy.svg');", 1000);
+        });
     </script>
 </body>
 

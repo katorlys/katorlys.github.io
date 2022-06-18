@@ -10,6 +10,16 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/soft-design-system.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .kl-scale {
+            transition: transform 0.5s;
+            -moz-transition: transform 0.5s;
+        }
+
+        .kl-scale:hover {
+            transform: scale(1.035);
+        }
+    </style>
 
     <!-- JS -->
     <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
@@ -43,7 +53,7 @@
     <div id="intro" class="p-5 mb-4" style="background-color: #FEFEFE;">
         <div class="container-fluid col-xxl-11 py-3">
             <h1 class="display-5 fw-bold">Get involved</h1>
-            <p class="col-md-8 lead">Want to get involved? Contribute or Join us!</p>
+            <p class="lead">Want to get involved? Contribute or Join us!</p>
         </div>
     </div>
     <!-- /Intro -->
@@ -52,10 +62,11 @@
     <section id="involving" class="pt-4">
         <div class="container">
             <div class="row mb-5">
-                <div class="col-lg-6 col-md-6 pb-4">
+                <div class="col-lg-6 col-md-6 kl-scale pb-4">
                     <a href="/contribute.html">
                         <div class="card card-background align-items-start h-100">
-                            <div class="full-background" style="background-image: url(/img/involving/contribute.jpg)"></div>
+                            <div class="full-background" style="background-image: url(/img/involving/contribute.jpg)">
+                            </div>
                             <div class="card-body z-index-3"></div>
                             <div class="card-footer pb-2 pt-10 z-index-3">
                                 <h3 class="text-white mb-1 pt-4">Contribute</h3>
@@ -67,7 +78,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-6 col-md-6 pb-4">
+                <div class="col-lg-6 col-md-6 kl-scale pb-4">
                     <a href="/join.html">
                         <div class="card card-background align-items-start h-100">
                             <div class="full-background" style="background-image: url(/img/involving/join.jpg)"></div>
@@ -102,6 +113,55 @@
     <script type="text/javascript">
         $("#header").load("assets/components/nav.html #header");
         $("#footer").load("assets/components/nav.html #footer");
+
+        //Happening now
+        // var eventjson;
+        // var avatar, user, time, type, repo = new Array();
+        // if (sessionStorage.getItem("katorlylab_ghevents") != null) {
+        //     eventjson = JSON.parse(sessionStorage.getItem("katorlylab_ghevents"));
+        //     console.log(eventjson[0].actor.avatar_url);
+        //     for (var i = 0; i <= 3; i++) {
+        //         avatar[i] = JSON.stringify(eventjson[i].actor.avatar_url);
+        //         user[i] = eventjson[i].actor.login;
+        //         time[i] = eventjson[i].created_at;
+        //         type[i] = eventjson[i].type;
+        //         repo[i] = eventjson[i].repo.name;
+        //     }
+        //     document.getElementById("event_1_avatar").innerHTML = eventjson[0].actor.avatar_url;
+        //     document.getElementById("event_2_avatar").innerHTML = eventjson[1].actor.avatar_url;
+        //     document.getElementById("event_3_avatar").innerHTML = eventjson[2].actor.avatar_url;
+        //     document.getElementById("event_4_avatar").innerHTML = eventjson[3].actor.avatar_url;
+        //     document.getElementById("event_1_user").innerHTML = eventjson[0].actor.login;
+        //     document.getElementById("event_2_user").innerHTML = eventjson[1].actor.login;
+        //     document.getElementById("event_3_user").innerHTML = eventjson[2].actor.login;
+        //     document.getElementById("event_4_user").innerHTML = eventjson[3].actor.login;
+        //     document.getElementById("event_1_time").innerHTML = eventjson[0].created_at;
+        //     document.getElementById("event_2_time").innerHTML = eventjson[1].created_at;
+        //     document.getElementById("event_3_time").innerHTML = eventjson[2].created_at;
+        //     document.getElementById("event_4_time").innerHTML = eventjson[3].created_at;
+        //     document.getElementById("event_1_type").innerHTML = eventjson[0].type;
+        //     document.getElementById("event_2_type").innerHTML = eventjson[1].type;
+        //     document.getElementById("event_3_type").innerHTML = eventjson[2].type;
+        //     document.getElementById("event_4_type").innerHTML = eventjson[3].type;
+        //     document.getElementById("event_1_repo").innerHTML = eventjson[0].repo.name;
+        //     document.getElementById("event_2_repo").innerHTML = eventjson[1].repo.name;
+        //     document.getElementById("event_3_repo").innerHTML = eventjson[2].repo.name;
+        //     document.getElementById("event_4_repo").innerHTML = eventjson[3].repo.name;
+        // } else {
+        //     var url = "https://api.github.com/orgs/katorlys/events";
+        //     var xhr = new XMLHttpRequest();
+        //     xhr.open("GET", url);
+        //     xhr.setRequestHeader("Accept", "application/vnd.github.v3+json");
+        //     xhr.onreadystatechange = function () {
+        //         if (xhr.readyState === 4) {
+        //             if (xhr.status === 200) {
+        //                 eventjson = JSON.parse(xhr.response);
+        //                 sessionStorage.setItem("katorlylab_ghevents", xhr.response);
+        //             }
+        //         }
+        //     };
+        //     xhr.send();
+        // }
     </script>
 </body>
 

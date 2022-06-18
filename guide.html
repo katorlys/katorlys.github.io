@@ -10,6 +10,16 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/soft-design-system.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .kl-scale {
+            transition: transform 0.5s;
+            -moz-transition: transform 0.5s;
+        }
+
+        .kl-scale:hover {
+            transform: scale(1.035);
+        }
+    </style>
 
     <!-- JS -->
     <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
@@ -43,7 +53,7 @@
     <div id="intro" class="p-5 mb-4" style="background-color: #FEFEFE;">
         <div class="container-fluid col-xxl-11 py-3">
             <h1 class="display-5 fw-bold">Guide</h1>
-            <p class="col-md-8 lead">Welcome to Katorly Lab help center!</p>
+            <p class="lead">Welcome to Katorly Lab help center!</p>
         </div>
     </div>
     <!-- !Intro -->
@@ -52,7 +62,7 @@
     <section id="guide" class="pt-4">
         <div class="container">
             <div class="row mb-5">
-                <div class="col-lg-6 col-md-6 pb-4">
+                <div class="col-lg-6 col-md-6 kl-scale pb-4">
                     <a target="_blank" href="https://github.com/katorlys/HelpCenter/wiki">
                         <div class="card card-background align-items-start h-100">
                             <div class="full-background" style="background-image: url(/img/guide/document.jpg)">
@@ -69,10 +79,11 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-6 col-md-6 pb-4">
-                    <a target="_blank" href="https://github.com/katorlys/HelpCenter/discussions">
+                <div class="col-lg-6 col-md-6 kl-scale pb-4">
+                    <a target="_blank" href="https://github.com/orgs/katorlys/discussions">
                         <div class="card card-background align-items-start h-100">
-                            <div class="full-background" style="background-image: url(/img/guide/discussions.jpg)"></div>
+                            <div class="full-background" style="background-image: url(/img/guide/discussions.jpg)">
+                            </div>
                             <div class="card-body z-index-3"></div>
                             <div class="card-footer pb-2 pt-10 z-index-3">
                                 <h3 class="text-white mb-1 pt-4">&#128172; Discussions</h3>
@@ -85,7 +96,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-12 col-md-12 pb-2">
+                <div class="col-lg-12 col-md-12 kl-scale pb-2">
                     <a target="_blank" href="https://github.com/katorlys/InsidersVersion">
                         <div class="card card-background align-items-start h-100">
                             <div class="full-background" style="background-image: url(/img/guide/insiders.jpg)"></div>
