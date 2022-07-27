@@ -25,6 +25,7 @@
     <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/soft-design-system.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
 
     <!-- CACHE -->
     <meta http-equiv="Cache-Control" content="max-age=86400 must-revalidate" />
@@ -56,94 +57,87 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <div id="header"></div>
+    <div class="loader"></div>
+    <div class="content">
+        <!-- Header -->
+        <div id="header"></div>
 
-    <!-- Intro -->
-    <div id="intro" class="p-5 mb-4" style="background-color: #FEFEFE;">
-        <div class="container-fluid col-xxl-11 py-3">
-            <h1 class="display-5 fw-bold">Guide</h1>
-            <p class="lead">Welcome to Katorly Lab help center!</p>
-        </div>
-    </div>
-    <!-- !Intro -->
-
-    <!-- Guidance -->
-    <section id="guide" class="pt-4">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-lg-6 col-md-6 kl-scale pb-4">
-                    <a target="_blank" href="https://github.com/katorlys/HelpCenter/wiki">
-                        <div class="card card-background align-items-start h-100">
-                            <div class="full-background" style="background-image: url(/img/guide/document.jpg)">
-                            </div>
-                            <div class="card-body z-index-3"></div>
-                            <div class="card-footer pb-2 pt-10 z-index-3">
-                                <h3 class="text-white mb-1 pt-4">&#128218; Document</h3>
-                                <p class="text-white text-md opacity-7">
-                                    Not knowing what to do in Katorly Lab? Have questions using the lab?
-                                    You may find more information and answers here.
-                                </p>
-                            </div>
-                            <span class="mask bg-dark border-radius-xl z-index-2 opacity-4"></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-6 kl-scale pb-4">
-                    <a target="_blank" href="https://github.com/orgs/katorlys/discussions">
-                        <div class="card card-background align-items-start h-100">
-                            <div class="full-background" style="background-image: url(/img/guide/discussions.jpg)">
-                            </div>
-                            <div class="card-body z-index-3"></div>
-                            <div class="card-footer pb-2 pt-10 z-index-3">
-                                <h3 class="text-white mb-1 pt-4">&#128172; Discussions</h3>
-                                <p class="text-white text-md opacity-7">
-                                    Have problems that cannot be resolved in our existing document and discussion?
-                                    You may seek help by starting new discussions here.
-                                </p>
-                            </div>
-                            <span class="mask bg-dark border-radius-xl z-index-2 opacity-4"></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-12 col-md-12 kl-scale pb-2">
-                    <a target="_blank" href="https://github.com/katorlys/InsidersVersion">
-                        <div class="card card-background align-items-start h-100">
-                            <div class="full-background" style="background-image: url(/img/guide/insiders.jpg)"></div>
-                            <div class="card-body z-index-3"></div>
-                            <div class="card-footer pb-2 pt-4 z-index-3">
-                                <h3 class="text-white mb-1 pt-4">&#128271; The Insiders Guide</h3>
-                                <p class="text-white text-md opacity-7">
-                                    The Insiders version of Katorly Lab. Not opened to public.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+        <!-- Intro -->
+        <div id="intro" class="p-5 mb-4" style="background-color: #FEFEFE;">
+            <div class="container-fluid col-xxl-11 py-3">
+                <h1 class="display-5 fw-bold">Guide</h1>
+                <p class="lead">Welcome to Katorly Lab help center!</p>
             </div>
         </div>
-    </section>
-    <!-- /Guidance -->
+        <!-- !Intro -->
 
-    <!-- Footer -->
-    <script type="text/javascript">
-        function nowTime() {
-            var today = new Date();
-            var yyyy = today.getFullYear();
-            document.getElementById('nowDate').innerHTML = yyyy;
-        }
-    </script>
-    <div id="footer"></div>
+        <!-- Guidance -->
+        <section id="guide" class="pt-4">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-6 col-md-6 kl-scale pb-4">
+                        <a target="_blank" href="https://github.com/katorlys/HelpCenter/wiki">
+                            <div class="card card-background align-items-start h-100">
+                                <div class="full-background" style="background-image: url(/img/guide/document.jpg)">
+                                </div>
+                                <div class="card-body z-index-3"></div>
+                                <div class="card-footer pb-2 pt-10 z-index-3">
+                                    <h3 class="text-white mb-1 pt-4">&#128218; Document</h3>
+                                    <p class="text-white text-md opacity-7">
+                                        Not knowing what to do in Katorly Lab? Have questions using the lab?
+                                        You may find more information and answers here.
+                                    </p>
+                                </div>
+                                <span class="mask bg-dark border-radius-xl z-index-2 opacity-4"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 kl-scale pb-4">
+                        <a target="_blank" href="https://github.com/orgs/katorlys/discussions">
+                            <div class="card card-background align-items-start h-100">
+                                <div class="full-background" style="background-image: url(/img/guide/discussions.jpg)">
+                                </div>
+                                <div class="card-body z-index-3"></div>
+                                <div class="card-footer pb-2 pt-10 z-index-3">
+                                    <h3 class="text-white mb-1 pt-4">&#128172; Discussions</h3>
+                                    <p class="text-white text-md opacity-7">
+                                        Have problems that cannot be resolved in our existing document and discussion?
+                                        You may seek help by starting new discussions here.
+                                    </p>
+                                </div>
+                                <span class="mask bg-dark border-radius-xl z-index-2 opacity-4"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 col-md-12 kl-scale pb-2">
+                        <a target="_blank" href="https://github.com/katorlys/InsidersVersion">
+                            <div class="card card-background align-items-start h-100">
+                                <div class="full-background" style="background-image: url(/img/guide/insiders.jpg)">
+                                </div>
+                                <div class="card-body z-index-3"></div>
+                                <div class="card-footer pb-2 pt-4 z-index-3">
+                                    <h3 class="text-white mb-1 pt-4">&#128271; The Insiders Guide</h3>
+                                    <p class="text-white text-md opacity-7">
+                                        The Insiders version of Katorly Lab. Not opened to public.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Guidance -->
 
-    <!-- INCLUDES -->
-    <script type="text/javascript">
-        $("#header").load("assets/components/nav.html #header");
-        $("#footer").load("assets/components/nav.html #footer");
-    </script>
+        <!-- Footer -->
+        <div id="footer"></div>
+
+        <!-- INCLUDES -->
+        <script type="text/javascript">
+            $("#header").load("assets/components/nav.html #header");
+            $("#footer").load("assets/components/nav.html #footer");
+        </script>
+    </div>
 </body>
-
-<script>
-    setInterval(nowTime, 500);
-</script>
 
 </html>

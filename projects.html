@@ -54,6 +54,7 @@
     <script type="text/javascript" src="assets/js/soft-design-system.min.js"></script>
     <script type="text/javascript" src="assets/js/uikit.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
 
     <!-- CACHE -->
     <meta http-equiv="Cache-Control" content="max-age=86400 must-revalidate" />
@@ -84,7 +85,8 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body><div class="loader"></div>
+    <div class="content">
     <!-- Header -->
     <div id="header"></div>
 
@@ -420,13 +422,6 @@
     <!-- /Projects -->
 
     <!-- Footer -->
-    <script type="text/javascript">
-        function nowTime() {
-            var today = new Date();
-            var yyyy = today.getFullYear();
-            document.getElementById('nowDate').innerHTML = yyyy;
-        }
-    </script>
     <div id="footer"></div>
 
     <!-- INCLUDES -->
@@ -454,11 +449,7 @@
             };
             xhr.send();
         }
-    </script>
+    </script></div>
 </body>
-
-<script>
-    setInterval(nowTime, 500);
-</script>
 
 </html>

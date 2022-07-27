@@ -52,6 +52,7 @@
     <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/soft-design-system.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
 
     <!-- CACHE -->
     <meta http-equiv="Cache-Control" content="max-age=86400 must-revalidate" />
@@ -83,381 +84,382 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <div id="header"></div>
+    <div class="loader"></div>
+    <div class="content">
+        <!-- Header -->
+        <div id="header"></div>
 
-    <!-- Navigation -->
-    <header id="hero">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="page-header min-vh-75 m-3 border-radius-xl"
-                        style="background-image: url(/img/insiders/nav_welcome.jpg);">
-                        <span class="mask bg-dark"></span>
-                        <div class="container">
+        <!-- Navigation -->
+        <header id="hero">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="page-header min-vh-75 m-3 border-radius-xl"
+                            style="background-image: url(/img/insiders/nav_welcome.jpg);">
+                            <span class="mask bg-dark"></span>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 my-auto">
+                                        <h1 class="text-white fadeIn2 fadeInBottom">&#128075; Welcome, Insiders!</h1>
+                                        <p class="lead text-white pt-2 opacity-8 fadeIn3 fadeInBottom">
+                                            Start your development by clicking the links in the navigation below, or
+                                            scroll
+                                            down to see more.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid px-3">
                             <div class="row">
-                                <div class="col-lg-6 my-auto">
-                                    <h1 class="text-white fadeIn2 fadeInBottom">&#128075; Welcome, Insiders!</h1>
-                                    <p class="lead text-white pt-2 opacity-8 fadeIn3 fadeInBottom">
-                                        Start your development by clicking the links in the navigation below, or scroll
-                                        down to see more.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid px-3">
-                        <div class="row">
-                            <div class="col-lg-4 pb-2">
-                                <div class="info-horizontal bg-light border-radius-xl p-5">
-                                    <div class="icon">&#128213;</div>
-                                    <div class="description ps-4">
-                                        <h5>Repositories</h5>
-                                        <p>
-                                            Go to projects hosted on Github.
-                                        </p>
-                                        <a target="_blank" href="https://github.com/orgs/katorlys/repositories"
-                                            class="kl-red">
-                                            Go <img width="16px" height="auto" class="pb-1" src="/img/arrow-right.svg">
-                                        </a>
+                                <div class="col-lg-4 pb-2">
+                                    <div class="info-horizontal bg-light border-radius-xl p-5">
+                                        <div class="icon">&#128213;</div>
+                                        <div class="description ps-4">
+                                            <h5>Repositories</h5>
+                                            <p>
+                                                Go to projects hosted on Github.
+                                            </p>
+                                            <a target="_blank" href="https://github.com/orgs/katorlys/repositories"
+                                                class="kl-red">
+                                                Go <img width="16px" height="auto" class="pb-1"
+                                                    src="/img/arrow-right.svg">
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 pb-2">
-                                <div class="info-horizontal bg-light border-radius-xl p-5">
-                                    <div class="icon">&#128172;</div>
-                                    <div class="description ps-4">
-                                        <h5>Discussions</h5>
-                                        <p>
-                                            Chat and discuss with the team.
-                                        </p>
-                                        <a target="_blank" href="https://github.com/orgs/katorlys/discussions"
-                                            class="kl-red">
-                                            Go <img width="16px" height="auto" class="pb-1" src="/img/arrow-right.svg">
-                                        </a>
+                                <div class="col-lg-4 pb-2">
+                                    <div class="info-horizontal bg-light border-radius-xl p-5">
+                                        <div class="icon">&#128172;</div>
+                                        <div class="description ps-4">
+                                            <h5>Discussions</h5>
+                                            <p>
+                                                Chat and discuss with the team.
+                                            </p>
+                                            <a target="_blank" href="https://github.com/orgs/katorlys/discussions"
+                                                class="kl-red">
+                                                Go <img width="16px" height="auto" class="pb-1"
+                                                    src="/img/arrow-right.svg">
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 pb-2">
-                                <div class="info-horizontal bg-light border-radius-xl p-5">
-                                    <div class="icon">&#128187;</div>
-                                    <div class="description ps-4">
-                                        <h5>Online Development</h5>
-                                        <p>
-                                            Develop projects online with Gitpod.
-                                        </p>
-                                        <a target="_blank" href="https://gitpod.io/workspaces" class="kl-red">
-                                            Go <img width="16px" height="auto" class="pb-1" src="/img/arrow-right.svg">
-                                        </a>
+                                <div class="col-lg-4 pb-2">
+                                    <div class="info-horizontal bg-light border-radius-xl p-5">
+                                        <div class="icon">&#128187;</div>
+                                        <div class="description ps-4">
+                                            <h5>Online Development</h5>
+                                            <p>
+                                                Develop projects online with Gitpod.
+                                            </p>
+                                            <a target="_blank" href="https://gitpod.io/workspaces" class="kl-red">
+                                                Go <img width="16px" height="auto" class="pb-1"
+                                                    src="/img/arrow-right.svg">
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="page-header min-vh-75 m-3 border-radius-xl"
-                        style="background-image: url(/img/insiders/nav_guide.jpg);">
-                        <span class="mask bg-dark"></span>
-                        <div class="container">
+                    <div class="carousel-item">
+                        <div class="page-header min-vh-75 m-3 border-radius-xl"
+                            style="background-image: url(/img/insiders/nav_guide.jpg);">
+                            <span class="mask bg-dark"></span>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 my-auto">
+                                        <h1 class="text-white fadeIn2 fadeInBottom">&#128214; Guide for Insiders</h1>
+                                        <p class="lead text-white pt-2 opacity-8 fadeIn3 fadeInBottom">
+                                            Where you can find the rules, suggestions and courses.
+                                        </p>
+                                        <div class="buttons d-grid gap-2 d-md-block">
+                                            <a type="button" class="btn btn-lg btn-rounded shadow-none mt-4"
+                                                style="color: white; background-color: #EF7379;" target="_blank"
+                                                href="https://github.com/katorlys/InsidersVersion">
+                                                Read
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid px-3">
                             <div class="row">
-                                <div class="col-lg-6 my-auto">
-                                    <h1 class="text-white fadeIn2 fadeInBottom">&#128214; Guide for Insiders</h1>
-                                    <p class="lead text-white pt-2 opacity-8 fadeIn3 fadeInBottom">
-                                        Where you can find the rules, suggestions and courses.
-                                    </p>
-                                    <div class="buttons d-grid gap-2 d-md-block">
-                                        <a type="button" class="btn btn-lg btn-rounded shadow-none mt-4"
-                                            style="color: white; background-color: #EF7379;" target="_blank"
-                                            href="https://github.com/katorlys/InsidersVersion">
-                                            Read
-                                        </a>
+                                <div class="col-lg-4 pb-2">
+                                    <div class="info-horizontal bg-light border-radius-xl p-5">
+                                        <div class="icon">&#128230;</div>
+                                        <div class="description ps-4">
+                                            <h5>Template</h5>
+                                            <p>
+                                                Use this to create a new repository.
+                                            </p>
+                                            <a target="_blank" href="https://github.com/katorlys/Template"
+                                                class="kl-red">
+                                                Go <img width="16px" height="auto" class="pb-1"
+                                                    src="/img/arrow-right.svg">
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid px-3">
-                        <div class="row">
-                            <div class="col-lg-4 pb-2">
-                                <div class="info-horizontal bg-light border-radius-xl p-5">
-                                    <div class="icon">&#128230;</div>
-                                    <div class="description ps-4">
-                                        <h5>Template</h5>
-                                        <p>
-                                            Use this to create a new repository.
-                                        </p>
-                                        <a target="_blank" href="https://github.com/katorlys/Template" class="kl-red">
-                                            Go <img width="16px" height="auto" class="pb-1" src="/img/arrow-right.svg">
-                                        </a>
+                                <div class="col-lg-4 pb-2">
+                                    <div class="info-horizontal bg-light border-radius-xl p-5">
+                                        <div class="icon">&#128221;</div>
+                                        <div class="description ps-4">
+                                            <h5>Github Projects</h5>
+                                            <p>
+                                                Your personal memo on Github.
+                                            </p>
+                                            <a target="_blank"
+                                                href="https://github.com/orgs/katorlys/projects?type=beta"
+                                                class="kl-red">
+                                                Go <img width="16px" height="auto" class="pb-1"
+                                                    src="/img/arrow-right.svg">
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 pb-2">
-                                <div class="info-horizontal bg-light border-radius-xl p-5">
-                                    <div class="icon">&#128221;</div>
-                                    <div class="description ps-4">
-                                        <h5>Github Projects</h5>
-                                        <p>
-                                            Your personal memo on Github.
-                                        </p>
-                                        <a target="_blank" href="https://github.com/orgs/katorlys/projects?type=beta"
-                                            class="kl-red">
-                                            Go <img width="16px" height="auto" class="pb-1" src="/img/arrow-right.svg">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 pb-2">
-                                <div class="info-horizontal bg-light border-radius-xl p-5">
-                                    <div class="icon">&#9989;</div>
-                                    <div class="description ps-4">
-                                        <h5>Licenses</h5>
-                                        <p>
-                                            Choose a license for your project.
-                                        </p>
-                                        <span style="color: #9F97A1">
-                                            Coming soon
-                                        </span>
+                                <div class="col-lg-4 pb-2">
+                                    <div class="info-horizontal bg-light border-radius-xl p-5">
+                                        <div class="icon">&#9989;</div>
+                                        <div class="description ps-4">
+                                            <h5>Licenses</h5>
+                                            <p>
+                                                Choose a license for your project.
+                                            </p>
+                                            <span style="color: #9F97A1">
+                                                Coming soon
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="min-vh-75 position-absolute w-100 top-0">
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon position-absolute bottom-50 ms-n7"
-                        aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon position-absolute bottom-50 me-n7"
-                        aria-hidden="true"></span>
-                </a>
-            </div>
-        </div>
-    </header>
-    <!-- /Navigation -->
-
-    <!-- Events -->
-    <section id="event" class="pt-8 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3 class="mb-5">Recent Events</h3>
-                </div>
-            </div>
-            <div class="row">
-
-                <div class="col-lg-3 col-sm-6">
-                    <div class="card card-plain mb-4">
-                        <div class="card-footer px-0">
-                            <h5 class="text-dark font-weight-bold">
-                                Senior Translator
-                            </h5>
-                            <p>
-                                <span class="badge badge-md kl-event-active">Live</span>
-                                Localize other people&#39;s projects to make them more popular.
-                            </p>
-                            <a target="_blank" class="kl-red"
-                                href="https://github.com/orgs/katorlys/projects/1/views/1">
-                                Progress <img width="16px" height="auto" class="pb-1" src="/img/arrow-right.svg">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6">
-                    <div class="card card-plain mb-4">
-                        <div class="card-footer px-0">
-                            <h5 class="text-dark font-weight-bold">
-                                15-days of Streak challenge
-                            </h5>
-                            <p>
-                                <span class="badge badge-md kl-event-complete">Complete</span>
-                                Commit on Github repositories for 15 days in a row.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6">
-                    <div class="card card-plain mb-4">
-                        <div class="card-footer px-0">
-                            <h5 class="text-dark font-weight-bold">
-                                Minecraft Earth buildplates reconstruction
-                            </h5>
-                            <p>
-                                <span class="badge badge-md kl-event-complete">Complete</span>
-                                Rebuild buildplates of Minecraft Earth in Minecraft.
-                            </p>
-                            <a target="_blank" class="kl-red"
-                                href="https://www.planetminecraft.com/member/katorly/submissions/?keywords=Minecraft%20Earth">
-                                Submissions <img width="16px" height="auto" class="pb-1" src="/img/arrow-right.svg">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6">
-                    <a target="_blank" href="https://github.com/katorlys/HelpCenter/discussions/categories/requests">
-                        <div class="card card-background align-items-start h-100">
-                            <div class="full-background"
-                                style="background-image: url(/img/insiders/event_hold_your_own.jpg)">
-                            </div>
-                            <div class="card-footer z-index-3">
-                                <h3 class="text-white mb-1">Hold an event</h3>
-                                <p class="fw-bold text-white text-md opacity-7">
-                                    Want to hold your own event? Request here.
-                                </p>
-                            </div>
-                            <div class="card-footer pb-5 z-index-3"></div>
-                            <span class="mask bg-dark border-radius-xl z-index-2 opacity-4"></span>
-                        </div>
+                <div class="min-vh-75 position-absolute w-100 top-0">
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon position-absolute bottom-50 ms-n7"
+                            aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon position-absolute bottom-50 me-n7"
+                            aria-hidden="true"></span>
                     </a>
                 </div>
-
             </div>
-        </div>
-    </section>
-    <!-- /Events -->
+        </header>
+        <!-- /Navigation -->
 
-    <!-- Templates -->
-    <section id="templates" class="pt-5 pb-8">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3 class="mb-5">Project Templates</h3>
+        <!-- Events -->
+        <section id="event" class="pt-8 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="mb-5">Recent Events</h3>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card card-plain mb-4">
+                            <div class="card-footer px-0">
+                                <h5 class="text-dark font-weight-bold">
+                                    Senior Translator
+                                </h5>
+                                <p>
+                                    <span class="badge badge-md kl-event-active">Live</span>
+                                    Localize other people&#39;s projects to make them more popular.
+                                </p>
+                                <a target="_blank" class="kl-red"
+                                    href="https://github.com/orgs/katorlys/projects/1/views/1">
+                                    Progress <img width="16px" height="auto" class="pb-1" src="/img/arrow-right.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card card-plain mb-4">
+                            <div class="card-footer px-0">
+                                <h5 class="text-dark font-weight-bold">
+                                    15-days of Streak challenge
+                                </h5>
+                                <p>
+                                    <span class="badge badge-md kl-event-complete">Complete</span>
+                                    Commit on Github repositories for 15 days in a row.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card card-plain mb-4">
+                            <div class="card-footer px-0">
+                                <h5 class="text-dark font-weight-bold">
+                                    Minecraft Earth buildplates reconstruction
+                                </h5>
+                                <p>
+                                    <span class="badge badge-md kl-event-complete">Complete</span>
+                                    Rebuild buildplates of Minecraft Earth in Minecraft.
+                                </p>
+                                <a target="_blank" class="kl-red"
+                                    href="https://www.planetminecraft.com/member/katorly/submissions/?keywords=Minecraft%20Earth">
+                                    Submissions <img width="16px" height="auto" class="pb-1" src="/img/arrow-right.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a target="_blank"
+                            href="https://github.com/katorlys/HelpCenter/discussions/categories/requests">
+                            <div class="card card-background align-items-start h-100">
+                                <div class="full-background"
+                                    style="background-image: url(/img/insiders/event_hold_your_own.jpg)">
+                                </div>
+                                <div class="card-footer z-index-3">
+                                    <h3 class="text-white mb-1">Hold an event</h3>
+                                    <p class="fw-bold text-white text-md opacity-7">
+                                        Want to hold your own event? Request here.
+                                    </p>
+                                </div>
+                                <div class="card-footer pb-5 z-index-3"></div>
+                                <span class="mask bg-dark border-radius-xl z-index-2 opacity-4"></span>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
             </div>
-            <div class="row">
+        </section>
+        <!-- /Events -->
 
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card shadow-none">
-                        <div class="card-footer p-3">
-                            <div class="d-flex">
-                                <div class="avatar avatar-xl border-radius-md p-2">
-                                    <img src="/img/octicons/repo-template.svg">
+        <!-- Templates -->
+        <section id="templates" class="pt-5 pb-8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="mb-5">Project Templates</h3>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card shadow-none">
+                            <div class="card-footer p-3">
+                                <div class="d-flex">
+                                    <div class="avatar avatar-xl border-radius-md p-2">
+                                        <img src="/img/octicons/repo-template.svg">
+                                    </div>
+                                    <div class="ms-3 my-auto">
+                                        <h5 class="mb-0">Template</h5>
+                                        <h6 class="kl-purple">Repository</h6>
+                                    </div>
                                 </div>
-                                <div class="ms-3 my-auto">
-                                    <h5 class="mb-0">Template</h5>
-                                    <h6 class="kl-purple">Repository</h6>
-                                </div>
-                            </div>
-                            <p class="ms-2 mt-2">
-                                Use this to create a new repository.
-                            </p>
-                            <hr class="horizontal dark">
-                            <div class="row">
-                                <div class="col-6">
-                                    <p class="text-secondary text-sm font-weight-bold ms-1 mb-0">2021.10.22</p>
-                                </div>
-                                <div class="col-6 text-end">
-                                    <a target="_blank" href="https://github.com/katorlys/Template"
-                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Go">
-                                        <img src="/img/openlink.svg" width="24px" height="auto" class="kl-svg me-1">
-                                    </a>
+                                <p class="ms-2 mt-2">
+                                    Use this to create a new repository.
+                                </p>
+                                <hr class="horizontal dark">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="text-secondary text-sm font-weight-bold ms-1 mb-0">2021.10.22</p>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <a target="_blank" href="https://github.com/katorlys/Template"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Go">
+                                            <img src="/img/openlink.svg" width="24px" height="auto" class="kl-svg me-1">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card shadow-none">
-                        <div class="card-footer p-3">
-                            <div class="d-flex">
-                                <div class="avatar avatar-xl border-radius-md p-2">
-                                    <img src="/img/octicons/repo-template.svg">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card shadow-none">
+                            <div class="card-footer p-3">
+                                <div class="d-flex">
+                                    <div class="avatar avatar-xl border-radius-md p-2">
+                                        <img src="/img/octicons/repo-template.svg">
+                                    </div>
+                                    <div class="ms-3 my-auto">
+                                        <h5 class="mb-0">Maven Spigot Starter</h5>
+                                        <h6 class="kl-purple">Repository</h6>
+                                    </div>
                                 </div>
-                                <div class="ms-3 my-auto">
-                                    <h5 class="mb-0">Maven Spigot Starter</h5>
-                                    <h6 class="kl-purple">Repository</h6>
-                                </div>
-                            </div>
-                            <p class="ms-2 mt-2">
-                                A latest Spigot maven starter template.
-                            </p>
-                            <hr class="horizontal dark">
-                            <div class="row">
-                                <div class="col-6">
-                                    <p class="text-secondary text-sm font-weight-bold ms-1 mb-0">2022.01.21</p>
-                                </div>
-                                <div class="col-6 text-end">
-                                    <a target="_blank" href="https://github.com/katorlys/Maven-Spigot-Starter"
-                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Go">
-                                        <img src="/img/openlink.svg" width="24px" height="auto" class="kl-svg me-1">
-                                    </a>
+                                <p class="ms-2 mt-2">
+                                    A latest Spigot maven starter template.
+                                </p>
+                                <hr class="horizontal dark">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="text-secondary text-sm font-weight-bold ms-1 mb-0">2022.01.21</p>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <a target="_blank" href="https://github.com/katorlys/Maven-Spigot-Starter"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" title="Go">
+                                            <img src="/img/openlink.svg" width="24px" height="auto" class="kl-svg me-1">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
-        </div>
-    </section>
-    <script>
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-    </script>
-    <!-- /Templates -->
+        </section>
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
+        <!-- /Templates -->
 
-    <section class="py-5 bg-gradient-dark position-relative kl-bg overflow-hidden"
-        style="background-image:url(/img/insiders/call_to_actions.jpg)">
-        <div class="container position-relative z-index-2">
-            <div class="row">
-                <div class="col-lg-5 col-md-8 m-auto text-start">
-                    <h5 class="text-white mb-lg-0 mb-5">
-                        Explore. Innovate. Develop.<br>
-                        Start today&#39;s coding now.
-                    </h5>
-                </div>
-                <div class="col-lg-6 m-auto">
-                    <div class="row">
-                        <div class="col-sm-4 col-6 ps-sm-0 ms-auto">
-                            <a type="button" href="https://github.com/organizations/katorlys/repositories/new"
-                                target="_blank" class="btn mb-0 ms-lg-3 ms-sm-2 mb-sm-0 mb-2 me-auto w-100 d-block"
-                                style="background-color: #2DA44E; color: #FFFFFF;">
-                                <img width="16px" height="auto" src="/img/insiders/new_repository.svg">
-                                New repository
-                            </a>
-                        </div>
-                        <div class="col-sm-4 col-6 ps-sm-0 me-lg-0 me-auto">
-                            <a type="button" href="https://github.com/orgs/katorlys/repositories" target="_blank"
-                                class="btn mb-0 ms-lg-3 ms-sm-2 mb-sm-0 mb-2 me-auto w-100 d-block"
-                                style="background-color: #218BFF; color: #FFFFFF;">
-                                <img width="16px" height="auto" src="/img/insiders/search_repository.svg">
-                                Search projects</a>
+        <section class="py-5 bg-gradient-dark position-relative kl-bg overflow-hidden"
+            style="background-image:url(/img/insiders/call_to_actions.jpg)">
+            <div class="container position-relative z-index-2">
+                <div class="row">
+                    <div class="col-lg-5 col-md-8 m-auto text-start">
+                        <h5 class="text-white mb-lg-0 mb-5">
+                            Explore. Innovate. Develop.<br>
+                            Start today&#39;s coding now.
+                        </h5>
+                    </div>
+                    <div class="col-lg-6 m-auto">
+                        <div class="row">
+                            <div class="col-sm-4 col-6 ps-sm-0 ms-auto">
+                                <a type="button" href="https://github.com/organizations/katorlys/repositories/new"
+                                    target="_blank" class="btn mb-0 ms-lg-3 ms-sm-2 mb-sm-0 mb-2 me-auto w-100 d-block"
+                                    style="background-color: #2DA44E; color: #FFFFFF;">
+                                    <img width="16px" height="auto" src="/img/insiders/new_repository.svg">
+                                    New repository
+                                </a>
+                            </div>
+                            <div class="col-sm-4 col-6 ps-sm-0 me-lg-0 me-auto">
+                                <a type="button" href="https://github.com/orgs/katorlys/repositories" target="_blank"
+                                    class="btn mb-0 ms-lg-3 ms-sm-2 mb-sm-0 mb-2 me-auto w-100 d-block"
+                                    style="background-color: #218BFF; color: #FFFFFF;">
+                                    <img width="16px" height="auto" src="/img/insiders/search_repository.svg">
+                                    Search projects</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <script type="text/javascript">
-        function nowTime() {
-            var today = new Date();
-            var yyyy = today.getFullYear();
-            document.getElementById('nowDate').innerHTML = yyyy;
-        }
-    </script>
-    <div id="footer"></div>
+        <!-- Footer -->
+        <div id="footer"></div>
 
-    <!-- INCLUDES -->
-    <script type="text/javascript">
-        $("#header").load("assets/components/nav.html #header");
-        $("#footer").load("assets/components/nav.html #footer");
-    </script>
+        <!-- INCLUDES -->
+        <script type="text/javascript">
+            $("#header").load("assets/components/nav.html #header");
+            $("#footer").load("assets/components/nav.html #footer");
+        </script>
+    </div>
 </body>
-
-<script>
-    setInterval(nowTime, 500);
-</script>
 
 </html>

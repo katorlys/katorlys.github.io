@@ -401,6 +401,7 @@
     <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/soft-design-system.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
 
     <!-- CACHE -->
     <meta http-equiv="Cache-Control" content="max-age=86400 must-revalidate" />
@@ -432,127 +433,120 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <div id="header"></div>
+    <div class="loader"></div>
+    <div class="content">
+        <!-- Header -->
+        <div id="header"></div>
 
-    <!-- Message -->
-    <div id="hero" class="py-8">
-        <div class="container col-xxl-10 px-4">
-            <div class="row flex-lg-row-reverse align-items-center">
-                <div class="col-8 col-sm-6 col-lg-4">
-                    <div class="d-block mx-auto mb-4">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            viewBox="0 0 226 226" width="320" height="320">
-                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                                style="mix-blend-mode: normal">
-                                <path d="M0,226v-226h226v226z" fill="none" class="animated-svg-1"></path>
-                                <g>
-                                    <path
-                                        d="M204.8125,176.5625h-183.625c-7.80097,0 -14.125,-6.32403 -14.125,-14.125v-113c0,-7.80097 6.32403,-14.125 14.125,-14.125h183.625c7.80097,0 14.125,6.32403 14.125,14.125v113c0,7.80097 -6.32403,14.125 -14.125,14.125z"
-                                        fill="#463c4b" class="animated-svg-2"></path>
-                                    <path
-                                        d="M190.6875,176.5625h-169.5c-7.80097,0 -14.125,-6.32403 -14.125,-14.125v-113c0,-7.80097 6.32403,-14.125 14.125,-14.125h169.5c7.80097,0 14.125,6.32403 14.125,14.125v113c0,7.80097 -6.32403,14.125 -14.125,14.125z"
-                                        fill="#555a6e" class="animated-svg-3"></path>
-                                    <path
-                                        d="M187.15625,162.4375h-162.4375c-1.95013,0 -3.53125,-1.58112 -3.53125,-3.53125v-105.9375c0,-1.95013 1.58112,-3.53125 3.53125,-3.53125h162.4375c1.95013,0 3.53125,1.58112 3.53125,3.53125v105.9375c0,1.95013 -1.58112,3.53125 -3.53125,3.53125z"
-                                        fill="#463c4b" class="animated-svg-4"></path>
-                                    <rect x="216" y="400" transform="scale(0.44141,0.44141)" width="72" height="32"
-                                        fill="#463c4b" class="animated-svg-5"></rect>
-                                    <rect x="216" y="416" transform="scale(0.44141,0.44141)" width="48" height="16"
-                                        fill="#555a6e" class="animated-svg-6"></rect>
-                                    <path
-                                        d="M162.4375,204.8125h-102.40625v-7.0625c0,-3.90071 3.16179,-7.0625 7.0625,-7.0625h88.28125c3.90071,0 7.0625,3.16179 7.0625,7.0625z"
-                                        fill="#555a6e" class="animated-svg-7"></path>
-                                    <path
-                                        d="M162.4375,204.8125h-21.1875v-7.0625c0,-3.90071 3.16179,-7.0625 7.0625,-7.0625h7.0625c3.90071,0 7.0625,3.16179 7.0625,7.0625z"
-                                        fill="#463c4b" class="animated-svg-8"></path>
+        <!-- Message -->
+        <div id="hero" class="py-8">
+            <div class="container col-xxl-10 px-4">
+                <div class="row flex-lg-row-reverse align-items-center">
+                    <div class="col-8 col-sm-6 col-lg-4">
+                        <div class="d-block mx-auto mb-4">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 226 226" width="320"
+                                height="320">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,226v-226h226v226z" fill="none" class="animated-svg-1"></path>
                                     <g>
                                         <path
-                                            d="M161.50702,95.37112l-42.375,-74.15625c-1.25757,-2.20041 -3.5979,-3.55862 -6.13202,-3.55862h-14.125c-2.53411,0 -4.87445,1.35821 -6.13202,3.55862l-42.375,74.15625c-1.24918,2.18584 -1.24035,4.87136 0.02339,7.04882c1.26375,2.17746 3.59128,3.51757 6.10862,3.51757h98.875c2.51734,0 4.84488,-1.34011 6.10862,-3.51757c1.2633,-2.17746 1.27257,-4.86297 0.02339,-7.04882z"
-                                            fill="#5faa46" class="animated-svg-9"></path>
-                                        <path d="M98.875,24.71875l-42.375,74.15625h84.75z" fill="#9b5faa"
-                                            class="animated-svg-10"></path>
+                                            d="M204.8125,176.5625h-183.625c-7.80097,0 -14.125,-6.32403 -14.125,-14.125v-113c0,-7.80097 6.32403,-14.125 14.125,-14.125h183.625c7.80097,0 14.125,6.32403 14.125,14.125v113c0,7.80097 -6.32403,14.125 -14.125,14.125z"
+                                            fill="#463c4b" class="animated-svg-2"></path>
                                         <path
-                                            d="M141.25,105.9375h-84.75c-2.51734,0 -4.84488,-1.34011 -6.10862,-3.51757c-1.2633,-2.17746 -1.27257,-4.86297 -0.02339,-7.04882l42.375,-74.15625c1.25757,-2.20041 3.5979,-3.55862 6.13202,-3.55862c2.53411,0 4.87445,1.35821 6.13202,3.55862l42.375,74.15625c1.24918,2.18584 1.24035,4.87136 -0.02339,7.04882c-1.26375,2.17746 -3.59128,3.51757 -6.10862,3.51757zM68.67001,91.8125h60.40954l-30.20455,-52.85884z"
-                                            fill="#91c83c" class="animated-svg-11"></path>
-                                    </g>
-                                    <g fill="#d7e6f0">
+                                            d="M190.6875,176.5625h-169.5c-7.80097,0 -14.125,-6.32403 -14.125,-14.125v-113c0,-7.80097 6.32403,-14.125 14.125,-14.125h169.5c7.80097,0 14.125,6.32403 14.125,14.125v113c0,7.80097 -6.32403,14.125 -14.125,14.125z"
+                                            fill="#555a6e" class="animated-svg-3"></path>
                                         <path
-                                            d="M81.21875,137.71875h-3.53125v-3.53125c0,-1.95013 -1.58112,-3.53125 -3.53125,-3.53125c-1.95013,0 -3.53125,1.58112 -3.53125,3.53125v3.53125h-7.2629l13.6677,-19.13496c1.13353,-1.58686 0.76584,-3.79256 -0.82102,-4.92609c-1.5873,-1.13397 -3.79212,-0.76628 -4.92565,0.82102l-17.65625,24.71875c-0.76893,1.07615 -0.87178,2.49218 -0.26661,3.66853c0.60517,1.17635 1.81683,1.91526 3.13972,1.91526h14.125v7.0625c0,1.95013 1.58112,3.53125 3.53125,3.53125c1.95013,0 3.53125,-1.58112 3.53125,-3.53125v-7.0625h3.53125c1.95013,0 3.53125,-1.58112 3.53125,-3.53125c0,-1.95013 -1.58112,-3.53125 -3.53125,-3.53125z"
-                                            class="animated-svg-12"></path>
+                                            d="M187.15625,162.4375h-162.4375c-1.95013,0 -3.53125,-1.58112 -3.53125,-3.53125v-105.9375c0,-1.95013 1.58112,-3.53125 3.53125,-3.53125h162.4375c1.95013,0 3.53125,1.58112 3.53125,3.53125v105.9375c0,1.95013 -1.58112,3.53125 -3.53125,3.53125z"
+                                            fill="#463c4b" class="animated-svg-4"></path>
+                                        <rect x="216" y="400" transform="scale(0.44141,0.44141)" width="72" height="32"
+                                            fill="#463c4b" class="animated-svg-5"></rect>
+                                        <rect x="216" y="416" transform="scale(0.44141,0.44141)" width="48" height="16"
+                                            fill="#555a6e" class="animated-svg-6"></rect>
                                         <path
-                                            d="M155.375,137.71875h-3.53125v-3.53125c0,-1.95013 -1.58112,-3.53125 -3.53125,-3.53125c-1.95013,0 -3.53125,1.58112 -3.53125,3.53125v3.53125h-7.2629l13.6677,-19.13496c1.13353,-1.58686 0.76584,-3.79256 -0.82102,-4.92609c-1.5873,-1.13397 -3.79256,-0.76628 -4.92565,0.82102l-17.65625,24.71875c-0.76893,1.07615 -0.87178,2.49218 -0.26661,3.66853c0.60517,1.17635 1.81683,1.91526 3.13972,1.91526h14.125v7.0625c0,1.95013 1.58112,3.53125 3.53125,3.53125c1.95013,0 3.53125,-1.58112 3.53125,-3.53125v-7.0625h3.53125c1.95013,0 3.53125,-1.58112 3.53125,-3.53125c0,-1.95013 -1.58112,-3.53125 -3.53125,-3.53125z"
-                                            class="animated-svg-13"></path>
+                                            d="M162.4375,204.8125h-102.40625v-7.0625c0,-3.90071 3.16179,-7.0625 7.0625,-7.0625h88.28125c3.90071,0 7.0625,3.16179 7.0625,7.0625z"
+                                            fill="#555a6e" class="animated-svg-7"></path>
                                         <path
-                                            d="M105.9375,113c-7.78861,0 -14.125,6.33639 -14.125,14.125v14.125c0,7.78861 6.33639,14.125 14.125,14.125c7.78861,0 14.125,-6.33639 14.125,-14.125v-14.125c0,-7.78861 -6.33639,-14.125 -14.125,-14.125zM113,141.25c0,3.89409 -3.16841,7.0625 -7.0625,7.0625c-3.89409,0 -7.0625,-3.16841 -7.0625,-7.0625v-14.125c0,-3.89409 3.16841,-7.0625 7.0625,-7.0625c3.89409,0 7.0625,3.16841 7.0625,7.0625z"
-                                            class="animated-svg-14"></path>
-                                    </g>
-                                    <g fill="#91c83c">
-                                        <path
-                                            d="M42.375,137.71875h-7.0625c-1.95013,0 -3.53125,-1.58112 -3.53125,-3.53125c0,-1.95013 1.58112,-3.53125 3.53125,-3.53125h7.0625c1.95013,0 3.53125,1.58112 3.53125,3.53125c0,1.95013 -1.58112,3.53125 -3.53125,3.53125z"
-                                            class="animated-svg-15"></path>
-                                    </g>
-                                    <g fill="#91c83c">
-                                        <path
-                                            d="M176.5625,137.71875h-7.0625c-1.95013,0 -3.53125,-1.58112 -3.53125,-3.53125c0,-1.95013 1.58112,-3.53125 3.53125,-3.53125h7.0625c1.95013,0 3.53125,1.58112 3.53125,3.53125c0,1.95013 -1.58112,3.53125 -3.53125,3.53125z"
-                                            class="animated-svg-16"></path>
+                                            d="M162.4375,204.8125h-21.1875v-7.0625c0,-3.90071 3.16179,-7.0625 7.0625,-7.0625h7.0625c3.90071,0 7.0625,3.16179 7.0625,7.0625z"
+                                            fill="#463c4b" class="animated-svg-8"></path>
+                                        <g>
+                                            <path
+                                                d="M161.50702,95.37112l-42.375,-74.15625c-1.25757,-2.20041 -3.5979,-3.55862 -6.13202,-3.55862h-14.125c-2.53411,0 -4.87445,1.35821 -6.13202,3.55862l-42.375,74.15625c-1.24918,2.18584 -1.24035,4.87136 0.02339,7.04882c1.26375,2.17746 3.59128,3.51757 6.10862,3.51757h98.875c2.51734,0 4.84488,-1.34011 6.10862,-3.51757c1.2633,-2.17746 1.27257,-4.86297 0.02339,-7.04882z"
+                                                fill="#5faa46" class="animated-svg-9"></path>
+                                            <path d="M98.875,24.71875l-42.375,74.15625h84.75z" fill="#9b5faa"
+                                                class="animated-svg-10"></path>
+                                            <path
+                                                d="M141.25,105.9375h-84.75c-2.51734,0 -4.84488,-1.34011 -6.10862,-3.51757c-1.2633,-2.17746 -1.27257,-4.86297 -0.02339,-7.04882l42.375,-74.15625c1.25757,-2.20041 3.5979,-3.55862 6.13202,-3.55862c2.53411,0 4.87445,1.35821 6.13202,3.55862l42.375,74.15625c1.24918,2.18584 1.24035,4.87136 -0.02339,7.04882c-1.26375,2.17746 -3.59128,3.51757 -6.10862,3.51757zM68.67001,91.8125h60.40954l-30.20455,-52.85884z"
+                                                fill="#91c83c" class="animated-svg-11"></path>
+                                        </g>
+                                        <g fill="#d7e6f0">
+                                            <path
+                                                d="M81.21875,137.71875h-3.53125v-3.53125c0,-1.95013 -1.58112,-3.53125 -3.53125,-3.53125c-1.95013,0 -3.53125,1.58112 -3.53125,3.53125v3.53125h-7.2629l13.6677,-19.13496c1.13353,-1.58686 0.76584,-3.79256 -0.82102,-4.92609c-1.5873,-1.13397 -3.79212,-0.76628 -4.92565,0.82102l-17.65625,24.71875c-0.76893,1.07615 -0.87178,2.49218 -0.26661,3.66853c0.60517,1.17635 1.81683,1.91526 3.13972,1.91526h14.125v7.0625c0,1.95013 1.58112,3.53125 3.53125,3.53125c1.95013,0 3.53125,-1.58112 3.53125,-3.53125v-7.0625h3.53125c1.95013,0 3.53125,-1.58112 3.53125,-3.53125c0,-1.95013 -1.58112,-3.53125 -3.53125,-3.53125z"
+                                                class="animated-svg-12"></path>
+                                            <path
+                                                d="M155.375,137.71875h-3.53125v-3.53125c0,-1.95013 -1.58112,-3.53125 -3.53125,-3.53125c-1.95013,0 -3.53125,1.58112 -3.53125,3.53125v3.53125h-7.2629l13.6677,-19.13496c1.13353,-1.58686 0.76584,-3.79256 -0.82102,-4.92609c-1.5873,-1.13397 -3.79256,-0.76628 -4.92565,0.82102l-17.65625,24.71875c-0.76893,1.07615 -0.87178,2.49218 -0.26661,3.66853c0.60517,1.17635 1.81683,1.91526 3.13972,1.91526h14.125v7.0625c0,1.95013 1.58112,3.53125 3.53125,3.53125c1.95013,0 3.53125,-1.58112 3.53125,-3.53125v-7.0625h3.53125c1.95013,0 3.53125,-1.58112 3.53125,-3.53125c0,-1.95013 -1.58112,-3.53125 -3.53125,-3.53125z"
+                                                class="animated-svg-13"></path>
+                                            <path
+                                                d="M105.9375,113c-7.78861,0 -14.125,6.33639 -14.125,14.125v14.125c0,7.78861 6.33639,14.125 14.125,14.125c7.78861,0 14.125,-6.33639 14.125,-14.125v-14.125c0,-7.78861 -6.33639,-14.125 -14.125,-14.125zM113,141.25c0,3.89409 -3.16841,7.0625 -7.0625,7.0625c-3.89409,0 -7.0625,-3.16841 -7.0625,-7.0625v-14.125c0,-3.89409 3.16841,-7.0625 7.0625,-7.0625c3.89409,0 7.0625,3.16841 7.0625,7.0625z"
+                                                class="animated-svg-14"></path>
+                                        </g>
+                                        <g fill="#91c83c">
+                                            <path
+                                                d="M42.375,137.71875h-7.0625c-1.95013,0 -3.53125,-1.58112 -3.53125,-3.53125c0,-1.95013 1.58112,-3.53125 3.53125,-3.53125h7.0625c1.95013,0 3.53125,1.58112 3.53125,3.53125c0,1.95013 -1.58112,3.53125 -3.53125,3.53125z"
+                                                class="animated-svg-15"></path>
+                                        </g>
+                                        <g fill="#91c83c">
+                                            <path
+                                                d="M176.5625,137.71875h-7.0625c-1.95013,0 -3.53125,-1.58112 -3.53125,-3.53125c0,-1.95013 1.58112,-3.53125 3.53125,-3.53125h7.0625c1.95013,0 3.53125,1.58112 3.53125,3.53125c0,1.95013 -1.58112,3.53125 -3.53125,3.53125z"
+                                                class="animated-svg-16"></path>
+                                        </g>
                                     </g>
                                 </g>
-                            </g>
-                        </svg>
+                            </svg>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-8">
-                    <h1 class="display-3 fw-bold pb-4 mb-0">Page Not Found</h1>
-                    <div class="lead py-4 pe-2 me-5">
-                        <span id="joke"></span>
-                    </div>
-                    <div class="buttons py-4">
-                        <a type="button" class="btn btn-lg btn-rounded mt-4"
-                            style="color: white; background-color: #6CD651;" href="index.html">
-                            Back to home
-                        </a>
+                    <div class="col-lg-8">
+                        <h1 class="display-3 fw-bold pb-4 mb-0">Page Not Found</h1>
+                        <div class="lead py-4 pe-2 me-5">
+                            <span id="joke"></span>
+                        </div>
+                        <div class="buttons py-4">
+                            <a type="button" class="btn btn-lg btn-rounded mt-4"
+                                style="color: white; background-color: #6CD651;" href="index.html">
+                                Back to home
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- /Message -->
+
+        <!-- Footer -->
+        <div id="footer"></div>
+
+        <!-- INCLUDES -->
+        <script type="text/javascript">
+            $("#header").load("assets/components/nav.html #header");
+            $("#footer").load("assets/components/nav.html #footer");
+
+            //Jokes
+            var url = "https://icanhazdadjoke.com/";
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url);
+            xhr.setRequestHeader("Accept", "text/plain");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) document.getElementById("joke").innerHTML = xhr.responseText;
+                    else document.getElementById("joke").innerHTML = "Maybe you wanna go home.";
+                }
+            };
+            xhr.send();
+        </script>
     </div>
-    <!-- /Message -->
-
-    <!-- Footer -->
-    <script type="text/javascript">
-        function nowTime() {
-            var today = new Date();
-            var yyyy = today.getFullYear();
-            document.getElementById('nowDate').innerHTML = yyyy;
-        }
-    </script>
-    <div id="footer"></div>
-
-    <!-- INCLUDES -->
-    <script type="text/javascript">
-        $("#header").load("assets/components/nav.html #header");
-        $("#footer").load("assets/components/nav.html #footer");
-
-        //Jokes
-        var url = "https://icanhazdadjoke.com/";
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", url);
-        xhr.setRequestHeader("Accept", "text/plain");
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4) {
-                if (xhr.status === 200) document.getElementById("joke").innerHTML = xhr.responseText;
-                else document.getElementById("joke").innerHTML = "Maybe you wanna go home.";
-            }
-        };
-        xhr.send();
-    </script>
 </body>
-
-<script>
-    setInterval(nowTime, 500);
-</script>
 
 </html>

@@ -6,6 +6,9 @@ body {
     scrollbar-width: thin;
     scrollbar-color: #CFCBD0 #EBEBEB;
 }
+.content {
+    display: none;
+}
 ::-webkit-scrollbar {
     width: 12px;
     height: 5px;

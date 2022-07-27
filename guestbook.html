@@ -15,6 +15,7 @@
     <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/soft-design-system.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
 
     <!-- CACHE -->
     <meta http-equiv="Cache-Control" content="max-age=86400 must-revalidate" />
@@ -46,48 +47,40 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <div id="header"></div>
+    <div class="loader"></div>
+    <div class="content">
+        <!-- Header -->
+        <div id="header"></div>
 
-    <!-- Intro -->
-    <div id="intro" class="kl-bg text-light p-5 mb-4" style="background-image:url(img/guestbook_bg.jpg)">
-        <div class="container-fluid col-xxl-11 pt-4 pb-2">
-            <h1 class="display-5 fw-bold text-light">Guest book</h1>
-            <p class="lead">Check out our guest book and leave a message on it!</p>
-        </div>
-    </div>
-    <!-- /Intro -->
-
-    <!-- Guestbook -->
-    <section id="involving" class="pt-4">
-        <div class="container">
-            <div class="row mb-5">
-                <script src="https://utteranc.es/client.js" repo="katorlys/HelpCenter" issue-number="2"
-                    theme="github-light" crossorigin="anonymous" async></script>
+        <!-- Intro -->
+        <div id="intro" class="kl-bg text-light p-5 mb-4" style="background-image:url(img/guestbook_bg.jpg)">
+            <div class="container-fluid col-xxl-11 pt-4 pb-2">
+                <h1 class="display-5 fw-bold text-light">Guest book</h1>
+                <p class="lead">Check out our guest book and leave a message on it!</p>
             </div>
         </div>
-    </section>
-    <!-- /Guestbook -->
+        <!-- /Intro -->
 
-    <!-- Footer -->
-    <script type="text/javascript">
-        function nowTime() {
-            var today = new Date();
-            var yyyy = today.getFullYear();
-            document.getElementById('nowDate').innerHTML = yyyy;
-        }
-    </script>
-    <div id="footer"></div>
+        <!-- Guestbook -->
+        <section id="involving" class="pt-4">
+            <div class="container">
+                <div class="row mb-5">
+                    <script src="https://utteranc.es/client.js" repo="katorlys/HelpCenter" issue-number="2"
+                        theme="github-light" crossorigin="anonymous" async></script>
+                </div>
+            </div>
+        </section>
+        <!-- /Guestbook -->
 
-    <!-- INCLUDES -->
-    <script type="text/javascript">
-        $("#header").load("assets/components/nav.html #header");
-        $("#footer").load("assets/components/nav.html #footer");
-    </script>
+        <!-- Footer -->
+        <div id="footer"></div>
+
+        <!-- INCLUDES -->
+        <script type="text/javascript">
+            $("#header").load("assets/components/nav.html #header");
+            $("#footer").load("assets/components/nav.html #footer");
+        </script>
+    </div>
 </body>
-
-<script>
-    setInterval(nowTime, 500);
-</script>
 
 </html>
