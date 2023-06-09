@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Projects - Katorly Lab</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/soft-design-system.min.css">
+    <link rel="stylesheet" href="assets/css/uikit.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .kl-card {
+            color: #515C70;
+            transition: all 0.2s;
+            -moz-transition: all 0.2s;
+        }
+
+        .kl-card:hover {
+            color: #515C70;
+            filter: brightness(95%);
+        }
+
+        .kl-card:active {
+            color: #515C70;
+            filter: brightness(90%);
+        }
+
+        .uk-subnav li a {
+            border-radius: 5px;
+        }
+
+        .uk-subnav li.uk-active:nth-child(1) a {
+            background-color: #2DA44E;
+        }
+
+        .uk-subnav li.uk-active:nth-child(2) a {
+            background-color: #218BFF;
+        }
+
+        .uk-subnav li.uk-active:nth-child(3) a {
+            background-color: #FF9700;
+        }
+
+        .uk-subnav li.uk-active:nth-child(4) a {
+            background-color: #F264BB;
+        }
+    </style>
+
+    <!-- JS -->
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/soft-design-system.min.js"></script>
+    <script type="text/javascript" src="assets/js/uikit.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+
+    <!-- CACHE -->
+    <meta http-equiv="Cache-Control" content="max-age=86400 must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2Q2Z42WL2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Z2Q2Z42WL2');
+    </script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body><div class="loader"></div>
+    <div class="content">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Intro -->
+    <div id="intro" class="p-5 mb-4" style="background-color: #FEFEFE;">
+        <div class="container-fluid col-xxl-11 py-3">
+            <h1 class="display-5 fw-bold">Projects</h1>
+            <p class="lead">
+                We have <span id="projectscount"></span> public projects on Github currently. Below are categorized by
+                programming languages.
+            </p>
+        </div>
+    </div>
+    <!-- !Intro -->
+
+    <!-- Projects -->
+    <section id="projects" class="pt-4">
+        <div class="container" uk-filter="target: .js-filter">
+            <div class="row mx-auto mb-6">
+                <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
+                    <div>
+                        <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                            <li class="uk-active font-weight-bold" uk-filter-control><a href="#">All</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                            <li uk-filter-control="filter: [data-lang='web']">
+                                <a class="font-weight-bold" href="#">Web</a>
+                            </li>
+                            <li uk-filter-control="filter: [data-lang='script']">
+                                <a class="font-weight-bold" href="#">Script</a>
+                            </li>
+                            <li uk-filter-control="filter: [data-lang='program']">
+                                <a class="font-weight-bold" href="#">Program</a>
+                            </li>
+                            <li uk-filter-control="filter: [data-lang='other']">
+                                <a class="font-weight-bold" href="#">Others</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                            <li uk-filter-control="filter: [data-type='code']">
+                                <a class="font-weight-bold" href="#">Code</a>
+                            </li>
+                            <li uk-filter-control="filter: [data-type='content']">
+                                <a class="font-weight-bold" href="#">Content</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="js-filter uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s"
+                    uk-grid="masonry: true">
+
+                    <li data-lang="script" data-type="code">
+                        <a href="https://github.com/orgs/katorlys/repositories?q=python" target="_blank"
+                            class="card kl-card shadow-none">
+                            <div class="card-footer p-2">
+                                <div class="d-flex">
+                                    <div class="avatar avatar-xl border-radius-md p-2">
+                                        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 226 226">
+                                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                                stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                                font-weight="none" font-size="none" text-anchor="none"
+                                                style="mix-blend-mode: normal">
+                                                <path d="M0,226v-226h226v226z" fill="none"></path>
+                                                <g fill="#3572a5">
+                                                    <path
+                                                        d="M110.74,9.04c-39.32047,0 -47.46,20.30469 -47.46,32.06375v22.17625h45.2v4.52h-67.37625c-14.91953,0 -32.06375,11.75906 -32.06375,45.2c0,33.44094 17.14422,45.2 32.06375,45.2h26.69625v-27.12c0,-9.94047 8.13953,-18.08 18.08,-18.08h54.24c7.68047,0 13.56,-5.87953 13.56,-13.56v-58.33625c0,-15.82 -14.91953,-32.06375 -42.94,-32.06375zM90.4,31.64c4.97906,0 9.04,4.06094 9.04,9.04c0,4.97906 -4.06094,9.04 -9.04,9.04c-4.97906,0 -9.04,-4.06094 -9.04,-9.04c0,-4.97906 4.06094,-9.04 9.04,-9.04zM158.2,67.8v31.64c0,9.94047 -8.13953,18.08 -18.08,18.08h-54.24c-7.68047,0 -13.56,5.87953 -13.56,13.56v53.81625c0,15.82 14.91953,32.06375 42.94,32.06375c39.32047,0 47.46,-20.30469 47.46,-32.06375v-22.17625h-45.2v-4.52h67.37625c14.91953,0 32.06375,-11.75906 32.06375,-45.2c0,-33.44094 -17.14422,-45.2 -32.06375,-45.2zM135.6,176.28c4.97906,0 9.04,4.06094 9.04,9.04c0,4.97906 -4.06094,9.04 -9.04,9.04c-4.97906,0 -9.04,-4.06094 -9.04,-9.04c0,-4.97906 4.06094,-9.04 9.04,-9.04z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="ms-3 my-auto kl-npe">
+                                        <span class="text-lg font-weight-bold">Python</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-lang="program" data-type="code">
+                        <a href="https://github.com/orgs/katorlys/repositories?q=java" target="_blank"
+                            class="card kl-card shadow-none">
+                            <div class="card-footer p-2">
+                                <div class="d-flex">
+                                    <div class="avatar avatar-xl border-radius-md p-2">
+                                        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 226 226">
+                                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                                stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                                font-weight="none" font-size="none" text-anchor="none"
+                                                style="mix-blend-mode: normal">
+                                                <path d="M0,226v-226h226v226z" fill="none"></path>
+                                                <g fill="#b07219">
+                                                    <path
+                                                        d="M127.4075,-0.01766c12.43,28.76203 -44.59969,46.52422 -49.87891,70.50141c-4.87313,21.99969 33.84703,47.58359 33.86469,47.58359c-5.87953,-9.11062 -10.13469,-16.63219 -16.03187,-30.81016c-9.97578,-23.97719 60.71984,-45.65906 32.04609,-87.27485zM165.20953,39.8325c0,0 -49.93187,3.16047 -52.47437,35.11828c-1.13,14.23094 13.11859,21.82313 13.54234,32.18734c0.31781,8.43969 -8.52797,15.48453 -8.52797,15.48453c0,0 16.04953,-3.01922 21.08156,-15.92594c5.56172,-14.31922 -10.78797,-24.10078 -9.14594,-35.55969c1.58906,-10.96453 35.52437,-31.30453 35.52437,-31.30453zM177.32172,113.65328c-5.22625,-0.22953 -11.03516,1.50078 -16.29672,5.27922c10.31125,-2.20703 19.03344,4.09625 19.03344,11.37063c0,16.385 -23.67703,31.86953 -23.67703,31.86953c0,0 36.65438,-4.18453 36.65438,-31.09266c0,-11.12344 -7.02719,-17.02062 -15.71406,-17.42672zM86.70984,113.68859c0,0 -45.74734,-0.61797 -45.74734,12.32406c0,13.52469 59.90766,14.47812 102.68875,6.14438c0,0 11.42359,-7.82172 14.46047,-10.735c-28.03813,5.72062 -92.02437,6.47984 -92.02437,1.53609c0,-4.57297 20.6225,-9.26953 20.6225,-9.26953zM75.65703,138.86641c-7.00953,0 -17.47969,5.42047 -17.47969,10.64672c0,10.50547 52.84516,18.60969 91.97141,3.24875l-13.54234,-8.29844c-26.51969,8.49266 -75.40984,5.77359 -60.94937,-5.59703zM82.17219,162.36688c-9.62266,0 -15.85531,5.9325 -15.85531,10.31125c0,13.48937 57.43578,14.84891 80.19469,1.13l-14.46047,-9.19891c-17.00297,7.18609 -59.69578,8.15719 -49.87891,-2.24234zM50.12609,174.585c-15.67875,-0.31781 -25.86641,6.72703 -25.86641,12.57125c-0.01766,31.075 160.56594,29.57422 160.56594,-2.18937c0,-5.26156 -6.215,-7.76875 -8.45734,-8.96938c13.11859,30.36875 -131.30953,28.02047 -131.30953,10.09938c0,-4.07859 10.59375,-8.08656 20.44594,-6.16203l-8.35141,-4.74953c-2.45422,-0.37078 -4.8025,-0.565 -7.02719,-0.60031zM201.75797,195.49c-24.41859,23.12969 -86.28609,31.56938 -148.50672,17.28547c62.20297,25.44266 148.18891,11.12344 148.50672,-17.28547z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="ms-3 my-auto kl-npe">
+                                        <span class="text-lg font-weight-bold">Java</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-lang="web" data-type="code">
+                        <a href="https://github.com/orgs/katorlys/repositories?q=html" target="_blank"
+                            class="card kl-card shadow-none">
+                            <div class="card-footer p-2">
+                                <div class="d-flex">
+                                    <div class="avatar avatar-xl border-radius-md p-2">
+                                        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 226 226">
+                                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                                stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                                font-weight="none" font-size="none" text-anchor="none"
+                                                style="mix-blend-mode: normal">
+                                                <path d="M0,226v-226h226v226z" fill="none"></path>
+                                                <g fill="#e34c26">
+                                                    <path
+                                                        d="M204.63594,10.50547c-0.8475,-0.93578 -2.06578,-1.46547 -3.33703,-1.46547h-176.59781c-1.27125,0 -2.48953,0.52969 -3.33703,1.46547c-0.86516,0.93578 -1.28891,2.18938 -1.16531,3.46063l15.90828,178.20453c0.15891,1.87156 1.46547,3.42531 3.26641,3.955l72.37297,20.65781c0.38844,0.12359 0.81219,0.17656 1.23594,0.17656c0.42375,0 0.82984,-0.05297 1.23594,-0.17656l72.42594,-20.65781c1.80094,-0.52969 3.08984,-2.08344 3.26641,-3.955l15.89063,-178.20453c0.12359,-1.27125 -0.30016,-2.52484 -1.16531,-3.46062zM166.55141,71.94922h-85.0325l2.03047,23.00609h80.95391l-6.07375,67.99422l-45.46484,13.73656l-0.44141,-0.14125l-44.93516,-13.61297l-2.45422,-27.70266h22.01734l0.95344,10.75266l25.12484,5.26156l24.66578,-5.26156l2.63078,-29.0975h-77.03422l-5.98547,-66.91719h111.00484z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="ms-3 my-auto kl-npe">
+                                        <span class="text-lg font-weight-bold">Html</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-lang="web" data-type="code">
+                        <a href="https://github.com/orgs/katorlys/repositories?q=javascript" target="_blank"
+                            class="card kl-card shadow-none">
+                            <div class="card-footer p-2">
+                                <div class="d-flex">
+                                    <div class="avatar avatar-xl border-radius-md p-2">
+                                        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 226 226">
+                                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                                stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                                font-weight="none" font-size="none" text-anchor="none"
+                                                style="mix-blend-mode: normal">
+                                                <path d="M0,226v-226h226v226z" fill="none"></path>
+                                                <g fill="#f1e05a">
+                                                    <path
+                                                        d="M195.87844,18.08h-165.73922c-6.65641,0 -12.05922,5.40281 -12.05922,12.05922v165.72156c0,6.65641 5.40281,12.05922 12.05922,12.05922h165.72156c6.65641,0 12.05922,-5.40281 12.05922,-12.04156v-165.73922c0,-6.65641 -5.40281,-12.05922 -12.04156,-12.05922zM122.04,163.54984c0,18.06234 -10.59375,26.29016 -26.06062,26.29016c-13.98375,0 -24.06547,-9.37547 -28.17937,-18.08l14.21328,-8.59859c2.73672,4.85547 6.90359,8.59859 12.90672,8.59859c5.73828,0 9.04,-2.24234 9.04,-10.96453v-56.83547h18.08zM161.25453,189.84c-16.01422,0 -25.10719,-8.06891 -30.17453,-18.08l13.56,-9.04c3.69016,6.03844 7.71578,11.81203 16.22609,11.81203c7.15078,0 10.89391,-3.56656 10.89391,-8.51031c0,-5.89719 -3.88438,-7.99828 -11.74141,-11.44125l-4.30813,-1.85391c-12.44766,-5.29687 -20.72844,-11.93562 -20.72844,-25.99c0,-12.92437 9.86984,-22.77656 25.26609,-22.77656c10.96453,0 18.83922,3.81375 24.52453,13.80719l-13.41875,8.63391c-2.96625,-5.31453 -6.14437,-7.39797 -11.10578,-7.39797c-5.04969,0 -8.24547,3.21344 -8.24547,7.39797c0,5.17328 3.19578,7.25672 10.59375,10.47016l4.30812,1.85391c14.67234,6.26797 22.93547,12.67719 22.93547,27.08469c0,15.51984 -12.20047,24.03016 -28.58547,24.03016z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="ms-3 my-auto kl-npe">
+                                        <span class="text-lg font-weight-bold">JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-lang="script" data-type="code">
+                        <a href="https://github.com/orgs/katorlys/repositories?q=batch" target="_blank"
+                            class="card kl-card shadow-none">
+                            <div class="card-footer p-2">
+                                <div class="d-flex">
+                                    <div class="avatar avatar-xl border-radius-md p-2">
+                                        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 226 226">
+                                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                                stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                                font-weight="none" font-size="none" text-anchor="none"
+                                                style="mix-blend-mode: normal">
+                                                <path d="M0,226v-226h226v226z" fill="none"></path>
+                                                <g fill="#c1f12e">
+                                                    <path
+                                                        d="M83.62,36.16c-9.64031,0 -18.78625,7.50391 -20.905,17.09125l-2.26,10.02875h163.285l1.83625,-8.05125c1.09469,-4.96141 0.08828,-9.94047 -2.825,-13.56c-2.87797,-3.58422 -7.20375,-5.50875 -12.1475,-5.50875zM58.4775,72.32l-21.89375,98.45125c-1.09469,4.96141 -0.07062,9.94047 2.825,13.56c2.84266,3.53125 7.27437,5.50875 12.1475,5.50875h126.98375c9.64031,0 18.76859,-7.50391 20.905,-17.09125l22.3175,-100.42875zM0,81.36v9.04h44.21125l1.9775,-9.04zM83.9025,90.4h106.92625l-7.76875,31.64h-107.0675zM0,117.52v9.04h36.16l1.9775,-9.04zM0,153.68v9.04h28.10875l1.9775,-9.04z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="ms-3 my-auto kl-npe">
+                                        <span class="text-lg font-weight-bold">Batch</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-lang="other" data-type="code">
+                        <a href="https://github.com/orgs/katorlys/repositories?q=mcfunction" target="_blank"
+                            class="card kl-card shadow-none">
+                            <div class="card-footer p-2">
+                                <div class="d-flex">
+                                    <div class="avatar avatar-xl border-radius-md p-2">
+                                        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 226 226">
+                                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                                stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                                font-weight="none" font-size="none" text-anchor="none"
+                                                style="mix-blend-mode: normal">
+                                                <path d="M0,226v-226h226v226z" fill="none"></path>
+                                                <g fill="#e22837">
+                                                    <path
+                                                        d="M47.46,18.08c-1.95984,0 -3.63719,1.23594 -4.2375,3.1075l-42.94,133.76375c-0.52969,1.65969 -0.15891,3.60188 1.13,4.8025l45.62375,42.375c0.82984,0.77688 1.95984,1.27125 3.1075,1.27125h49.29625c2.03047,0 3.84906,-1.43016 4.37875,-3.39l6.07375,-22.17625c0.42375,0.12359 0.81219,0.2825 1.27125,0.2825h11.0175l20.905,23.73c0.86516,0.98875 2.08344,1.55375 3.39,1.55375h50.99125c2.17172,0 4.11391,-1.53609 4.52,-3.6725l23.87125,-126.56c0.19422,-0.98875 0.03531,-2.06578 -0.42375,-2.96625l-25.7075,-49.72c-0.77688,-1.50078 -2.26,-2.40125 -3.955,-2.40125h-51.55625c-2.06578,0 -3.86672,1.39484 -4.37875,3.39l-5.085,19.775l-10.59375,0.2825c-1.9775,0.07062 -3.70781,1.48313 -4.2375,3.39l-0.2825,0.8475l-18.78625,-25.84875c-0.8475,-1.16531 -2.22469,-1.83625 -3.6725,-1.83625zM50.70875,27.12h40.115l-6.215,20.76375h-40.53875zM147.7475,27.12h41.95125l-10.31125,43.36375h-21.1875c0.21187,-0.65328 0.33547,-1.27125 0.42375,-1.9775l2.26,-15.5375c0.49437,-4.44937 -1.05938,-7.25672 -2.40125,-8.7575c-1.27125,-1.4125 -3.54891,-3.1075 -7.48625,-3.1075h-6.92125zM138.425,50.14375h12.57125c0.61797,0 0.82984,0.14125 0.8475,0.14125c0.07063,0.12359 0.22953,0.68859 0.14125,1.55375l-2.40125,15.39625c-0.19422,1.80094 -1.87156,2.825 -3.53125,2.825c-0.70625,0 -1.37719,0.14125 -1.9775,0.42375h-21.47l4.2375,-15.5375c0.12359,-0.45906 0.15891,-0.95344 0.14125,-1.4125l0.8475,-2.96625zM41.245,56.92375h52.40375l-4.52,16.95c-0.35313,1.35953 -0.01766,2.84266 0.8475,3.955c0.8475,1.11234 2.13641,1.695 3.53125,1.695h83.9025l-15.67875,72.74375h-39.69125l13.41875,-49.86125c0.37078,-1.35953 0,-2.84266 -0.8475,-3.955c-0.8475,-1.11234 -2.11875,-1.695 -3.53125,-1.695h-15.82c-2.04812,0 -3.84906,1.4125 -4.37875,3.39l-5.9325,21.89375h-18.50375l5.65,-20.0575c0.38844,-1.35953 0,-2.825 -0.8475,-3.955c-0.8475,-1.13 -2.11875,-1.695 -3.53125,-1.695h-15.82c-2.01281,0 -3.81375,1.32422 -4.37875,3.24875l-5.085,17.515c-0.31781,0.42375 -0.68859,0.88281 -0.8475,1.4125l-0.14125,0.8475h-15.5375l1.83625,-5.50875c0.8475,-2.96625 0.30016,-6.07375 -1.4125,-8.33375c-1.62438,-2.15406 -4.20219,-3.39 -7.0625,-3.39h-12.57125zM23.73,111.16375h15.39625l-1.695,5.085c-0.86516,2.03047 -1.07703,4.04328 -0.565,5.9325c-1.57141,1.28891 -2.68375,2.96625 -3.24875,4.94375l-1.695,6.07375c-1.30656,3.28406 -1.04172,6.81531 0.70625,9.46375c1.4125,2.13641 4.36109,4.66125 10.735,4.66125h10.02875l-1.27125,4.09625l-41.38625,0.42375zM45.62375,128.39625h13.13625l-2.825,9.8875h-12.57125c-2.61312,0 -3.24875,-0.565 -3.24875,-0.565c-0.05297,-0.12359 -0.10594,-0.68859 0.14125,-1.27125c0.07062,-0.17656 0.22953,-0.38844 0.2825,-0.565l1.83625,-6.215c0.15891,-0.58266 1.53609,-1.27125 3.24875,-1.27125z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="ms-3 my-auto kl-npe">
+                                        <span class="text-lg font-weight-bold">mcfunction</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-type="content">
+                        <a href="https://github.com/orgs/katorlys/repositories?q=maps" target="_blank"
+                            class="card kl-card shadow-none">
+                            <div class="card-footer p-2">
+                                <div class="d-flex">
+                                    <div class="avatar avatar-xl border-radius-md p-2">
+                                        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 226 226">
+                                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                                stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                                font-weight="none" font-size="none" text-anchor="none"
+                                                style="mix-blend-mode: normal">
+                                                <path d="M0,226v-226h226v226z" fill="none"></path>
+                                                <g fill="#505b6f">
+                                                    <path
+                                                        d="M113,0c-0.8475,0 -1.65969,0.22953 -2.40125,0.70625l-14.125,8.89875c4.44937,2.48953 10.27594,3.955 16.52625,3.955c6.17969,0 11.865,-1.44781 16.385,-3.955l-13.98375,-8.89875c-0.74156,-0.47672 -1.55375,-0.70625 -2.40125,-0.70625zM137.71875,14.83125l-1.695,1.4125c-0.15891,0.12359 -0.26484,0.17656 -0.42375,0.2825c-6.09141,3.88438 -14.14266,6.07375 -22.6,6.07375c-8.45734,0 -16.49094,-2.18937 -22.6,-6.07375l-2.26,-1.55375l-51.98,33.0525c5.91484,4.11391 9.04,9.41078 9.04,15.255c0,6.17969 -3.58422,11.865 -10.02875,15.96125l-2.11875,1.13l55.79375,35.3125l1.83625,-1.27125c6.07375,-3.86672 14.00141,-5.9325 22.3175,-5.9325c8.31609,0 16.19078,2.11875 22.17625,5.9325c0,0 0.98875,0.47672 2.26,1.27125l55.51125,-35.03l-2.11875,-1.27125c-6.53281,-4.14922 -10.02875,-9.8875 -10.02875,-16.1025c0,-5.80891 3.19578,-11.21172 8.89875,-15.255zM113,37.43125l9.18125,5.79125l-10.59375,6.78l-9.18125,-5.79125zM130.65625,48.59l11.5825,7.48625l-10.59375,6.78l-11.5825,-7.48625zM93.93125,49.57875l9.3225,5.9325l-10.735,6.78l-9.46375,-5.9325zM27.54375,53.3925l-18.50375,11.72375l15.255,9.74625l6.35625,-3.39c1.87156,-1.21828 5.50875,-4.16688 5.50875,-8.1925c0,-4.02562 -3.61953,-6.95656 -5.79125,-8.33375zM198.315,53.53375l-2.825,1.4125c-2.20703,1.43016 -5.65,4.37875 -5.65,8.33375c0,4.07859 3.74313,7.08016 5.9325,8.475l5.65,3.53125l15.5375,-9.74625zM111.5875,60.7375l11.72375,7.48625l-10.59375,6.78l-11.72375,-7.345zM150.71375,61.44375l10.02875,6.35625l-10.59375,6.78l-10.02875,-6.35625zM74.58,61.8675l9.46375,5.79125l-9.46375,6.07375l-9.3225,-5.9325zM92.51875,73.02625l11.72375,7.345l-9.605,6.215l-11.5825,-7.48625zM131.645,73.59125l10.02875,6.35625l-10.4525,6.63875l-10.02875,-6.215zM9.8875,75.71l8.1925,81.925c0.12359,1.28891 0.77688,2.48953 1.83625,3.24875l38.985,27.54375l-4.2375,-83.9025zM216.1125,76.275l-44.635,28.39125l-4.66125,84.04375l39.2675,-27.9675c1.05937,-0.75922 1.71266,-1.81859 1.83625,-3.1075zM112.7175,85.73875l10.02875,6.215l-9.74625,6.215l-9.8875,-6.215zM63.98625,110.4575l4.2375,84.75l40.25625,28.67375v-84.89125zM161.8725,110.74l-44.3525,28.25v84.89125l39.8325,-28.39125zM113,117.52c-5.77359,0 -11.35297,1.37719 -15.67875,3.6725l15.67875,9.8875l15.67875,-9.8875c-4.43172,-2.33063 -9.92281,-3.6725 -15.67875,-3.6725z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="ms-3 my-auto kl-npe">
+                                        <span class="text-lg font-weight-bold">MC Builds</span>
+                                        <span class="text-sm text-secondary"><br>Minecraft Builds & Maps</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-type="content">
+                        <a href="https://github.com/orgs/katorlys/repositories?q=template" target="_blank"
+                            class="card kl-card shadow-none">
+                            <div class="card-footer p-2">
+                                <div class="d-flex">
+                                    <div class="avatar avatar-xl border-radius-md p-2">
+                                        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 226 226">
+                                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                                stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                                font-weight="none" font-size="none" text-anchor="none"
+                                                style="mix-blend-mode: normal">
+                                                <path d="M0,226v-226h226v226z" fill="none"></path>
+                                                <g fill="#24292f">
+                                                    <path
+                                                        d="M74.43875,27.12c-0.98875,0 -2.03047,0.38844 -2.825,0.98875l-46.0475,35.17125h67.65875l41.10375,-36.16zM148.03,27.12l-41.10375,36.16h53.9575l36.30125,-36.16zM203.4,33.75875l-36.16,35.8775v126.2775l35.17125,-43.92875c0.63563,-0.81219 0.98875,-1.80094 0.98875,-2.825zM22.6,72.32v122.04c0,2.50719 2.03047,4.52 4.52,4.52h131.08v-126.56zM72.32,90.4h45.2c2.50719,0 4.52,2.03047 4.52,4.52c0,2.48953 -2.01281,4.52 -4.52,4.52h-45.2c-2.48953,0 -4.52,-2.03047 -4.52,-4.52c0,-2.48953 2.03047,-4.52 4.52,-4.52z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="ms-3 my-auto kl-npe">
+                                        <span class="text-lg font-weight-bold">Templates</span>
+                                        <span class="text-sm text-secondary"><br>Samples and starters</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li data-type="content">
+                        <a href="https://github.com/orgs/katorlys/repositories?q=support" target="_blank"
+                            class="card kl-card shadow-none">
+                            <div class="card-footer p-2">
+                                <div class="d-flex">
+                                    <div class="avatar avatar-xl border-radius-md p-2">
+                                        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 226 226">
+                                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                                stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                                font-weight="none" font-size="none" text-anchor="none"
+                                                style="mix-blend-mode: normal">
+                                                <path d="M0,226v-226h226v226z" fill="none"></path>
+                                                <g fill="#24292f">
+                                                    <path
+                                                        d="M213.1632,95.91892l-26.7132,-4.36632c-1.56392,-5.36072 -3.70188,-10.51352 -6.37772,-15.3906l15.594,-22.22484c1.26108,-1.79444 1.04412,-4.23976 -0.50624,-5.79464l-17.57828,-17.56924c-1.56844,-1.56392 -4.03636,-1.76732 -5.83532,-0.47008l-21.89036,15.73412c-4.92228,-2.72104 -10.12028,-4.8816 -15.51264,-6.45004l-4.66012,-26.60472c-0.37968,-2.16056 -2.25548,-3.74256 -4.4522,-3.74256h-24.86c-2.2148,0 -4.10416,1.6046 -4.46124,3.79228l-4.32112,26.46008c-5.424,1.5594 -10.63104,3.69736 -15.53524,6.38224l-21.8316,-15.594c-1.80348,-1.2882 -4.25784,-1.08028 -5.82628,0.47912l-17.56924,17.56924c-1.55036,1.55036 -1.76732,3.99116 -0.50624,5.7856l15.36348,21.98076c-2.7346,4.9494 -4.91324,10.18808 -6.49976,15.6392l-26.35612,4.38892c-2.17864,0.3616 -3.77872,2.25096 -3.77872,4.45672v24.86c0,2.1922 1.57296,4.068 3.729,4.4522l26.35612,4.67368c1.57748,5.43756 3.75612,10.67624 6.49976,15.6392l-15.55332,21.75476c-1.28368,1.79444 -1.08028,4.25784 0.47912,5.82628l17.57376,17.58732c1.55036,1.55036 3.99568,1.76732 5.79012,0.50624l22.0124,-15.41772c4.94036,2.71652 10.16096,4.87256 15.5714,6.43648l4.41152,26.49172c0.35708,2.17412 2.24192,3.76968 4.4522,3.76968h24.86c2.1922,0 4.068,-1.57296 4.44768,-3.729l4.7234,-26.6228c5.41948,-1.59556 10.61296,-3.76516 15.5036,-6.4862l22.1706,15.55332c1.79896,1.27012 4.23976,1.04864 5.79464,-0.50172l17.57376,-17.58732c1.56392,-1.56844 1.76732,-4.04088 0.47008,-5.83984l-15.81096,-21.95364c2.68036,-4.8816 4.80928,-10.04344 6.35964,-15.40416l26.74936,-4.69628c2.16508,-0.37968 3.73804,-2.26 3.73804,-4.4522v-24.86c0.00452,-2.2148 -1.60008,-4.10416 -3.78776,-4.46124zM113,144.64c-17.47432,0 -31.64,-14.16568 -31.64,-31.64c0,-17.47432 14.16568,-31.64 31.64,-31.64c17.47432,0 31.64,14.16568 31.64,31.64c0,17.47432 -14.16568,31.64 -31.64,31.64z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="ms-3 my-auto kl-npe">
+                                        <span class="text-lg font-weight-bold">Support</span>
+                                        <span class="text-sm text-secondary"><br>Utility repos for the lab</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- /Projects -->
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- INCLUDES -->
+    <script type="text/javascript">
+        $("#header").load("assets/components/nav.html #header");
+        $("#footer").load("assets/components/nav.html #footer");
+
+        //Projects count
+        if (sessionStorage.getItem("katorlylab_projectscount") != null) {
+            document.getElementById("projectscount").innerHTML = sessionStorage.getItem("katorlylab_projectscount");
+        } else {
+            var url = "https://api.github.com/orgs/katorlys";
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url);
+            xhr.setRequestHeader("Accept", "application/vnd.github.v3+json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        var count = JSON.parse(xhr.response).public_repos;
+                        document.getElementById("projectscount").innerHTML = count;
+                        sessionStorage.setItem("katorlylab_projectscount", count);
+                    }
+                    else document.getElementById("projectscount").innerHTML = "???";
+                }
+            };
+            xhr.send();
+        }
+    </script></div>
+</body>
+
+</html>
